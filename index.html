@@ -47,7 +47,7 @@ and open the template in the editor.
 			
 				$('.seletor').each(function(){
 				
-					$(this).css("background-image", "url(images/botao_selecao.png)");
+					$(this).css("background-image", "url(images/doencas.png)");
 					
 					$(this).html('<div class="tooltipText">'+
 									'<div class="figure01"><div class="peste">Clique na figura</div></div>'+
@@ -68,7 +68,7 @@ and open the template in the editor.
 						
 					$(this).each(function(){
 					
-						$(this).css('background-image', 'url(images/botao_selecao_over.png)');
+						$(this).css('background-image', 'url(images/doencas_over.png)');
 					});
 					
 
@@ -78,7 +78,7 @@ and open the template in the editor.
 						
 					$(this).each(function(){
 					
-						$(this).css('background-image', 'url(images/botao_selecao.png)');
+						$(this).css('background-image', 'url(images/doencas.png)');
 					});
 					
 
@@ -305,7 +305,8 @@ and open the template in the editor.
                         'use strict';
 
                         var module = {
-                            ratio: 1.53, //1.38,
+                            ratio: 1.54, //1.38,
+							ratioHeight:  0.82, // 0.944 
 							
                             init: function (id) {
                                 var me = this;
@@ -376,7 +377,7 @@ and open the template in the editor.
 
                                 var width = this.el.clientWidth,
                                         height = Math.round(width / this.ratio),
-                                        padded = Math.round(document.body.clientHeight * 0.944);
+                                        padded = Math.round(document.body.clientHeight * this.ratioHeight);
 
                                 // if the height is too big for the window, constrain it
                                 if (height > padded) {
@@ -869,7 +870,7 @@ and open the template in the editor.
 				height:1100%;
 				border-radius:15px;	
 				list-style-type:none;
-				background-image: url('images/interna_18.jpg');
+				background-image: url('images/fundo_doencas.jpg');
 				background-size: 100% 100%;
 				border: 1px solid black;
 				opacity: 0;
@@ -1138,7 +1139,8 @@ and open the template in the editor.
 			}
 			
 			.fundo-testeira{
-				margin-left:0.5%;
+				margin-left:11%;
+				max-width: 1500px;
 			}
 			
 			.testeira-icon3{
@@ -1146,8 +1148,8 @@ and open the template in the editor.
 				padding:0;
 				position: relative;
 				left:-1%;
-				top:7%;
-				width:10%;
+				top:10%;
+				width:7%;
 				height:auto;
 			}
 			
@@ -1162,6 +1164,7 @@ and open the template in the editor.
 			
 			#flipbook{
 				overflow:hidden;
+				margin-top:1%;
 			}
 			
 			
@@ -1174,10 +1177,10 @@ and open the template in the editor.
 		<header>
 			<div class="fundo-testeira">
 				<div class="testeira-icon2">
-					<h1><a title="Ir para a p&aacute;gina inicial" href="http://homolog.bvsoswaldocruz.coc.fiocruz.br/site"><img src="images/testeira_site.jpg" alt="Biblioteca Virtual Oswaldo Cruz"/></a></h1>
+					<h1><a title="Ir para a p&aacute;gina inicial" href="../index.php"><img src="images/testeira_site.jpg" alt="Biblioteca Virtual Oswaldo Cruz"/></a></h1>
 				</div>
 				<div class="testeira-icon3">
-					<a href="http://homolog.bvsoswaldocruz.coc.fiocruz.br/site"><img src="images/voltar-seta.png" alt="" width="100%" /></a>
+					<a href="../index.php"><img src="images/voltar-seta.png" alt="" width="100%" /></a>
 				</div>
 			</div>
 		</header>		
@@ -1205,7 +1208,7 @@ and open the template in the editor.
 
                             <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
 
-                                <a class="lightbox" style="margin:0; padding:0; " href="images/1_cruzada.png" data-fancybox-group="gallery" title="Cruzada Oswaldo: os micr&oacute;bios que escapam. O Malho, 25 junho 1910">
+                                <a class="lightbox" style="margin:0; padding:0; " href="images/1.jpg" data-fancybox-group="gallery" title="Cruzada Oswaldo: os micr&oacute;bios que escapam. O Malho, 25 junho 1910">
                                     <img id="lupa01" class="image-lupa" style="width:100% !important; height:auto !important;
 									padding : 1px 1px" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
@@ -1213,7 +1216,7 @@ and open the template in the editor.
 
                             <div style="position:relative; left:-130%; top:-43%; width:360%; height:600%;  margin:0; padding:1px 1px;" >
 
-                                <a class="lightbox" href="images/1_cruzada.png" data-fancybox-group="gallery" title="Cruzada Oswaldo: os micr&oacute;bios que escapam. O Malho, 25 junho 1910">
+                                <a class="lightbox" href="images/1.jpg" data-fancybox-group="gallery" title="Cruzada Oswaldo: os micr&oacute;bios que escapam. O Malho, 25 junho 1910">
                                     <img src="images/1_cruzada.png" alt=""  width="100%" height="auto" /></a>
 
                             </div>
@@ -1604,7 +1607,7 @@ and open the template in the editor.
 
                                 <div class="febre" style="position:relative; top:0%; left:0%; background-size:100% 100% ;background-image:url('images/indice_peste.jpg'); background-repeat:no-repeat; width:100%;height:90%;" ></div>
 
-                                <div id="letra02" class="letra" style="position:relative; top:0%; left:0%; background-size:100% 100% ;background-image:url('images/peste.png');background-repeat:no-repeat;width:80%;height:10%;" ></div>
+                                <div id="letra02" class="letra" style="position:relative; top:0%; left:0%; background-size:100% 100% ;background-image:url('images/peste.png');background-repeat:no-repeat;width:80%;height:8%;" ></div>
 
                             </div>
 
@@ -1613,16 +1616,16 @@ and open the template in the editor.
 
                                 <div class="febre" style="position:relative; top:0%; left:0%; background-size:100% 100% ;background-image:url('images/indice_variola.jpg'); background-repeat:no-repeat; width:100%;height:80%;" ></div>
 
-                                <div id="letra03" class="letra" style="position:relative; top:0%; left:0%; background-size:100% 100% ;background-image:url('images/variola.png');background-repeat:no-repeat;width:80%;height:9%;" ></div>
+                                <div id="letra03" class="letra" style="position:relative; top:0%; left:0%; background-size:100% 100% ;background-image:url('images/variola.png');background-repeat:no-repeat;width:80%;height:13%;" ></div>
 
                             </div>
 
 
-                            <div style="position:relative; top:-57%; left:60%; width:30%;height:35%;">
+                            <div style="position:relative; top:-54%; left:60%; width:30%;height:35%;">
 
                                 <div class="febre" style="position:relative; top:0%; left:0%; background-size:100% 100% ;background-image:url('images/indice_viagem.jpg'); background-repeat:no-repeat; width:100%;height:80%;" ></div>
 
-                                <div id="letra04" class="letra" style="position:relative; top:0%; left:0%; background-size:100% 100% ;background-image:url('images/viagens.png');background-repeat:no-repeat;width:80%;height:13%;" ></div>
+                                <div id="letra04" class="letra" style="position:relative; top:0%; left:0%; background-size:100% 100% ;background-image:url('images/viagens.png');background-repeat:no-repeat;width:80%;height:8%;" ></div>
 
                             </div>
 
@@ -2654,7 +2657,7 @@ and open the template in the editor.
 
                             <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
 
-                                <a class="lightbox" style="margin:0; padding:0; " href="images/1_cruzada.png" data-fancybox-group="gallery" title="Cruzada Oswaldo: os micr&oacute;bios que escapam. O Malho, 25 junho 1910">
+                                <a class="lightbox" style="margin:0; padding:0; " href="images/1.jpg" data-fancybox-group="gallery" title="Cruzada Oswaldo: os micr&oacute;bios que escapam. O Malho, 25 junho 1910">
                                     <img id="lupa001" class="image-lupa" style="width:100% !important; height:auto !important;
 									padding : 1px 1px" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
@@ -2662,7 +2665,7 @@ and open the template in the editor.
 
                             <div style="position:relative; left:-130%; top:-43%; width:360%; height:600%;  margin:0; padding:1px 1px;  " >
 
-                                <a class="lightbox" href="images/1_cruzada.png" data-fancybox-group="gallery" title="Cruzada Oswaldo: os micr&oacute;bios que escapam. O Malho, 25 junho 1910">
+                                <a class="lightbox" href="images/1.jpg" data-fancybox-group="gallery" title="Cruzada Oswaldo: os micr&oacute;bios que escapam. O Malho, 25 junho 1910">
                                     <img src="images/1_cruzada.png" alt=""  width="100%" height="auto" /></a>
 
                             </div>

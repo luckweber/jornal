@@ -59,7 +59,6 @@ body{
  position: relative;   
   width:63%; 
   height:auto; 
-  background: white; 
   padding: 1px 1px 1px 1px;
   z-index: 80;
 }
