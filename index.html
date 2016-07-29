@@ -64,6 +64,32 @@ and open the template in the editor.
 				});
 				
 				
+				
+				
+				
+				
+				$(".book").on("mouseover", '.lupa', function (event) {
+						
+					$(this).each(function(){
+					
+						$('.image-lupa').attr('src', 'images/zoom_over.png');
+					});
+					
+
+                });
+
+				$(".book").on("mouseout", '.lupa', function (event) {
+						
+					$(this).each(function(){
+					
+						$('.image-lupa').attr('src', 'images/zoom.png');
+					});
+					
+
+                });
+				
+				
+				
 				$(".book").on("mouseover", '.seletor', function (event) {
 						
 					$(this).each(function(){
@@ -83,6 +109,30 @@ and open the template in the editor.
 					
 
                 });
+				
+				
+				$(".book").on("mouseover", '.shield', function (event) {
+						
+					$(this).each(function(){
+					
+						$(this).css('background-image', 'url(images/campanhas_over.png)');
+					});
+					
+
+                });
+
+				$(".book").on("mouseout", '.shield', function (event) {
+						
+					$(this).each(function(){
+					
+						$(this).css('background-image', 'url(images/campanhas.png)');
+					});
+					
+
+                });
+				
+				
+				
 				
 				
 			
@@ -183,23 +233,7 @@ and open the template in the editor.
 
 
 
-                    $("body").on("mouseover", '.image-lupa', function (event) {
-
-                        var id = event.target.id;
-
-                        $("#" + id + "").attr("src", "images/zoom_over.png");
-
-                    });
-
-
-                    $("body").on("mouseout", '.image-lupa', function (event) {
-
-                        var id = event.target.id;
-
-                        $("#" + id).attr("src", "images/zoom.png");
-
-                    })
-
+                    
 
 
                     $("body").on('mouseover', '.letra', function (event) {
@@ -214,7 +248,7 @@ and open the template in the editor.
 
                         } else if (id == "letra03") {
 
-                            $("#" + id + "").css('background-image', 'url(images/variola_over.png)');
+                            //$("#" + id + "").css('background-image', 'url(images/variola_over.png)');
 
                         } else if (id == "letra04") {
 
@@ -295,8 +329,20 @@ and open the template in the editor.
 
 
                     });
+					
+					
+					
+					$(".book").on("click", '.shield', function (event) {
+						
+						$(this).each(function(){
+						
+							$("#default").turn('page', 3);
+						});
+						
 
-
+					});
+					
+					
 
 
 
@@ -1214,14 +1260,14 @@ and open the template in the editor.
                             </div>
 
 
-                            <div style="position:relative; left:-130%; top:-43%; width:360%; height:600%;  margin:0; padding:1px 1px;" >
+                            <div style="position:relative; left:-160%; top:-55%; width:420%; height:700%;  margin:0; padding:1px 1px;  " >
 
                                 <a class="lightbox" href="images/1.jpg" data-fancybox-group="gallery" title="Cruzada Oswaldo: os micr&oacute;bios que escapam. O Malho, 25 junho 1910">
                                     <img src="images/1_cruzada.png" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
-                            <div class="seta-direita" style=" position:relative; left:92.4%; top:-510%;"></div>
+                            <div class="seta-direita" style=" position:relative; left:92.4%; top:-610%;"></div>
 
 
 
@@ -1242,14 +1288,14 @@ and open the template in the editor.
                             </div>
 
 
-                            <div style="position:relative; left:-130%; top:-43%; width:360%; height:600%;  margin:0; padding:1px 1px;  " >
+                            <div style="position:relative; left:-160%; top:-55%; width:420%; height:700%;  margin:0; padding:1px 1px;  " >
 
                                 <a class="lightbox" href="images/1epidemia.jpg" data-fancybox-group="gallery" title="As epidemias. Revista da Semana. [1904]">
                                     <img src="images/1epidemia.jpg" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-510%; "></div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-610%; "></div>
 
 
 
@@ -1269,14 +1315,14 @@ and open the template in the editor.
                             </div>
 
 
-                            <div style="position:relative; left:-130%; top:-43%; width:360%; height:600%;  margin:0; padding:1px 1px; " >
+                            <div style="position:relative; left:-160%; top:-55%; width:420%; height:700%; margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/2.jpg" data-fancybox-group="gallery" title="Conferencia sinistra. Tagarela, 15 agosto 1904">
                                     <img src="images/2.jpg" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
-                            <div class="seta-direita" style=" position:relative; left:92.4%; top:-510%;"></div>
+                            <div class="seta-direita" style=" position:relative; left:92.4%; top:-610%;"></div>
 
 
 
@@ -1295,14 +1341,14 @@ and open the template in the editor.
                             </div>
 
 
-                            <div style="position:relative; left:-70%; top:-43%; width:250%; height:600%;  margin:0; padding:1px 1px; " >
+                            <div style="position:relative; left:-100%; top:-55%; width:300%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/3.jpg" data-fancybox-group="gallery" title="Guilherme tela de arame. Tagarela, 12 de agosto de 1904. J. Carlos">
                                     <img src="images/3.jpg" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-510%; "></div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-610%; "></div>
 
 
 
@@ -1320,14 +1366,14 @@ and open the template in the editor.
                             </div>
 
 
-                            <div style="position:relative; left:-150%; top:-43%; width:400%; height:600%;  margin:0; padding:1px 1px;" >
+                            <div style="position:relative; left:-160%; top:-55%; width:420%; height:700%; margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/4.jpg" data-fancybox-group="gallery" title="Higiene a muque. S.l.;s.d.">
                                     <img src="images/4.jpg" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
-                            <div class="seta-direita" style=" position:relative; left:92.4%; top:-510%;"></div>
+                            <div class="seta-direita" style=" position:relative; left:92.4%; top:-610%;"></div>
 
 
 
@@ -1346,14 +1392,14 @@ and open the template in the editor.
                             </div>
 
 
-                            <div style="position:relative; left:-100%; top:-43%; width:300%; height:600%;  margin:0; padding:1px 1px; " >
+                            <div style="position:relative; left:-160%; top:-55%; width:420%; height:700%; margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/5.jpg" data-fancybox-group="gallery" title="Na higiene dando ordens. Tagarela, 1904">
                                     <img src="images/5.jpg" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-510%; "></div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-610%; "></div>
 
 
 
@@ -1372,14 +1418,14 @@ and open the template in the editor.
                             </div>
 
 
-                            <div style="position:relative; left:-100%; top:-43%; width:300%; height:600%;  margin:0; padding:1px 1px;  " >
+                            <div style="position:relative; left:-160%; top:-55%; width:420%; height:700%; margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/6.jpg" data-fancybox-group="gallery" title="Guarda de honra Oswaldica. Tagarela, 15 setembro 1904">
                                     <img src="images/6.jpg" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
-                            <div class="seta-direita" style=" position:relative; left:92.4%; top:-510%;"></div>
+                            <div class="seta-direita" style=" position:relative; left:92.4%; top:-610%;"></div>
 
 
 
@@ -1397,14 +1443,14 @@ and open the template in the editor.
                             </div>
 
 
-                            <div style="position:relative; left:-70%; top:-43%; width:250%; height:600%;  margin:0; padding:1px 1px; " >
+                            <div style="position:relative; left:-160%; top:-55%; width:420%; height:700%; margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/7.jpg" data-fancybox-group="gallery" title="Luis XIV da seringa&ccedil;&atilde;o. S.l.; 1904">
                                     <img src="images/7.jpg" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-510%; "></div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-610%; "></div>
 
 
 
@@ -1423,14 +1469,14 @@ and open the template in the editor.
                             </div>
 
 
-                            <div style="position:relative; left:-70%; top:-43%; width:250%; height:600%;  margin:0; padding:1px 1px; " >
+                            <div style="position:relative; left:-100%; top:-55%; width:300%; height:700%; margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/8.jpg" data-fancybox-group="gallery" title="Cruz, Cruzes. S.l.;1904">
                                     <img src="images/8.jpg" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
-                            <div class="seta-direita" style=" position:relative; left:92.4%; top:-510%;"></div>
+                            <div class="seta-direita" style=" position:relative; left:92.4%; top:-610%;"></div>
 
 
 
@@ -1449,14 +1495,14 @@ and open the template in the editor.
                             </div>
 
 
-                            <div style="position:relative; left:-70%; top:-43%; width:250%; height:600%;  margin:0; padding:1px 1px; " >
+                            <div style="position:relative; left:-119%; top:-55%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/9.jpg" data-fancybox-group="gallery" title="Dr. Oswaldo Cruz. General da brigada mata-mosquitos. &Uacute;ltimo m&aacute;rtir da ci&ecirc;ncia. Careta, 31 de outubro de 1908. J.Carlos.">
                                     <img src="images/9.jpg" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-510%; "></div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-610%; "></div>
 
 
 
@@ -1475,14 +1521,14 @@ and open the template in the editor.
                             </div>
 
 
-                            <div style="position:relative; left:-70%; top:-43%; width:250%; height:600%;  margin:0; padding:1px 1px; " >
+                            <div style="position:relative; left:-117%; top:-55%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/10.jpg" data-fancybox-group="gallery" title="Aventuras fant&aacute;sticas de um grande ca&ccedil;ador. Ratos e mosquitos. Tartarin no Brasil. O Malho, 4 novembro 1905">
                                     <img src="images/10.jpg" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
-                            <div class="seta-direita" style=" position:relative; left:92.4%; top:-510%;"></div>
+                            <div class="seta-direita" style=" position:relative; left:92.4%; top:-610%;"></div>
 
 
 
@@ -1500,14 +1546,14 @@ and open the template in the editor.
                             </div>
 
 
-                            <div style="position:relative; left:-70%; top:-43%; width:250%; height:600%;  margin:0; padding:1px 1px; " >
+                            <div style="position:relative; left:-117%; top:-55%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/11.jpg" data-fancybox-group="gallery" title="Aventuras fant&aacute;sticas de um grande ca&ccedil;ador. O sonho. O Malho, 18 novembro 1905">
                                     <img src="images/11.jpg" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-510%; "></div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-610%; "></div>
 
 
 
@@ -1525,14 +1571,14 @@ and open the template in the editor.
                             </div>
 
 
-                            <div style="position:relative; left:-70%; top:-43%; width:250%; height:600%;  margin:0; padding:1px 1px; " >
+                            <div style="position:relative; left:-117%; top:-55%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/12.jpg" data-fancybox-group="gallery" title="Aventuras fant&aacute;sticas de um grande ca&ccedil;ador. Fim de um sonho e prel&uacute;dios da realidade. O Malho, 2 dezembro 1905">
                                     <img src="images/12.jpg" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
-                            <div class="seta-direita" style=" position:relative; left:92.4%; top:-510%;"></div>
+                            <div class="seta-direita" style=" position:relative; left:92.4%; top:-610%;"></div>
 
 
 
@@ -1550,14 +1596,14 @@ and open the template in the editor.
                             </div>
 
 
-                            <div style="position:relative; left:-70%; top:-43%; width:250%; height:600%;  margin:0; padding:1px 1px; " >
+                            <div style="position:relative; left:-117%; top:-55%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/13.jpg" data-fancybox-group="gallery" title="De volta. S.l.;s.d.">
                                     <img src="images/13.jpg" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-510%; "></div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-610%; "></div>
 
 
 
@@ -1576,14 +1622,14 @@ and open the template in the editor.
                             </div>
 
 
-                            <div style="position:relative; left:-70%; top:-43%; width:250%; height:600%;  margin:0; padding:1px 1px; " >
+                            <div style="position:relative; left:-117%; top:-55%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/14.jpg" data-fancybox-group="gallery" title="Le docteur Oswaldo Cruz, de Rio de Janeiro. Chanteclair, Paris. Outubro 1911">
                                     <img src="images/14.jpg" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
-                            <div class="seta-direita" style=" position:relative; left:92.4%; top:-510%;"></div>
+                            <div class="seta-direita" style=" position:relative; left:92.4%; top:-610%;"></div>
 
 
 
@@ -1594,7 +1640,7 @@ and open the template in the editor.
 
                         <div id="18" style="background-size:100% 100% ;background-image:url('images/fundo_pag18.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; top:7%; left:20%; width:30%;height:35%; ">
+                            <div style="position:relative; top:6%; left:20%; width:30%;height:35%; ">
 
                                 <div class="febre" style="position:relative; top:0%; left:0%; background-size:100% 100% ;background-image:url('images/indice_febre.jpg'); background-repeat:no-repeat; width:100%;height:90%;" ></div>
 
@@ -1603,7 +1649,7 @@ and open the template in the editor.
                             </div>
 
 
-                            <div style="position:relative; top:-25.5%; left:60%; ;width:30%;height:35%; ">
+                            <div style="position:relative; top:-27%; left:60%; ;width:30%;height:35%; ">
 
                                 <div class="febre" style="position:relative; top:0%; left:0%; background-size:100% 100% ;background-image:url('images/indice_peste.jpg'); background-repeat:no-repeat; width:100%;height:90%;" ></div>
 
@@ -1612,7 +1658,7 @@ and open the template in the editor.
                             </div>
 
 
-                            <div style="position:relative; top:-22%; left:20%; width:30%;height:35%; ">
+                            <div style="position:relative; top:-25%; left:19%; width:30%;height:35%; ">
 
                                 <div class="febre" style="position:relative; top:0%; left:0%; background-size:100% 100% ;background-image:url('images/indice_variola.jpg'); background-repeat:no-repeat; width:100%;height:80%;" ></div>
 
@@ -1640,7 +1686,7 @@ and open the template in the editor.
 
                         <div style="background-size:100% 100% ;background-image:url('images/interna_19.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-100%; top:-45%; width:300%; height:600%;">
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
                                     <img src="images/15.jpg" alt=""  width="100%" height="auto" /></a>
@@ -1648,26 +1694,31 @@ and open the template in the editor.
 
                             </div>
 
-                           <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; ">
+                           <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
 							
 							
 							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
                                 <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
                                     <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-
-                            <div class="seta-direita" style=" left:92%; top:-514%;"></div>
-                        </div>
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-617.5%;"></div>
+                        
+						</div>
 						
 						
 
                         <!--20: FEBRE AMARELA A praga de culicidios-->
                        <div style="background-size:100% 100% ;background-image:url('images/interna_20.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-70%; top:-43%; width:250%; height:600%;  margin:0; padding:1px 1px; " >
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/16.jpg" data-fancybox-group="gallery" title="A praga de culicidios. S.l., 1903">
                                     <img src="images/16.jpg" alt=""  width="100%" height="auto" /></a>
@@ -1675,25 +1726,28 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor02" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; ">
+                              <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
 							
 							
 							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/16.jpg" data-fancybox-group="gallery" title="A praga de culicidios. S.l., 1903">
-                                    <img id="lupa18" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
 
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-514%; "></div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-617.8%; "></div>
                         </div>
 						
 						
                         <!--21: FEBRE AMARELA Culicidio. Tagarela, 1903. J.Carlos-->
                         <div style="background-size:100% 100% ;background-image:url('images/interna_21.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-70%; top:-43%; width:250%; height:600%;  margin:0; padding:1px 1px; " >
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/17.jpg" data-fancybox-group="gallery" title="Culicidio. Tagarela, 1903. J.Carlos">
                                     <img src="images/17.jpg" alt=""  width="100%" height="auto" /></a>
@@ -1701,23 +1755,31 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor03" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/17.jpg" data-fancybox-group="gallery" title="Culicidio. Tagarela, 1903. J.Carlos">
-                                    <img id="lupa19" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-
-                            <div class="seta-direita" style=" left:92%; top:-514%;"></div>
-                        </div>
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-617.5%;"></div>
+                        
+						</div>
 
 
                         <!--22:  FEBRE AMARELA Papa-mosquitos. Tagarela, 16 de julho de 1903-->
 
                         <div style="background-size:100% 100% ;background-image:url('images/interna_22.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-70%; top:-43%; width:250%; height:600%;  margin:0; padding:1px 1px; " >
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/18.jpg" data-fancybox-group="gallery" title="Papa-mosquitos. Tagarela, 16 de julho de 1903">
                                     <img src="images/18.jpg" alt=""  width="100%" height="auto" /></a>
@@ -1725,22 +1787,27 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor04" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/18.jpg" data-fancybox-group="gallery" title="Papa-mosquitos. Tagarela, 16 de julho de 1903">
-                                    <img id="lupa20" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
 
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-514%; "></div>
-
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-617.8%; "></div>
                         </div>
                         <!--23: FEBRE AMARELA A grande nota. Eu vou a cuba. S.l.; s.d.-->
 
                         <div style="background-size:100% 100% ;background-image:url('images/interna_23.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-30%; top:-45%; width:150%; height:600%;">
+                            <div style="position:relative; left:-43%; top:-58%; width:180%; height:700%;">
 
                                 <a class="fancybox" href="images/19.jpg" data-fancybox-group="gallery" title="A grande nota. Eu vou a cuba. S.l.; s.d.">
                                     <img src="images/19.jpg" alt=""  width="100%" height="auto" /></a>
@@ -1748,23 +1815,30 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor05" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/19.jpg" data-fancybox-group="gallery" title="A grande nota. Eu vou a cuba. S.l.; s.d.">
-                                    <img id="lupa021" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-
-                             <div class="seta-direita" style=" left:92%; top:-514%;"></div>
-
-                        </div>
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-617.5%;"></div>
+                        
+						</div>
 
                         <!--24: FEBRE AMARELA Mata-mosquitos. Representante do código de torturas. Tagarela, 1904-->
 
                         <div style="background-size:100% 100% ;background-image:url('images/interna_24.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-70%; top:-43%; width:250%; height:600%;  margin:0; padding:1px 1px; " >
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/20.jpg" data-fancybox-group="gallery" title="Mata-mosquitos. Representante do c&oacute;digo de torturas. Tagarela, 1904">
                                     <img src="images/20.jpg" alt=""  width="100%" height="auto" /></a>
@@ -1772,15 +1846,21 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor06" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                             <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/20.jpg" data-fancybox-group="gallery" title="Mata-mosquitos. Representante do c&oacute;digo de torturas. Tagarela, 1904">
-                                    <img id="lupa19" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
 
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-514%; "></div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-617.8%; "></div>
                         </div>
 
 
@@ -1788,7 +1868,7 @@ and open the template in the editor.
 
                         <div style="background-size:100% 100% ;background-image:url('images/interna_25.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-70%; top:-43%; width:250%; height:600%;  margin:0; padding:1px 1px; " >
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/21.jpg" data-fancybox-group="gallery" title="De gloria em gloria. Jornal do Brasil, setembro 1907">
                                     <img src="images/21.jpg" alt=""  width="100%" height="auto" /></a>
@@ -1796,45 +1876,58 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor07" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/21.jpg" data-fancybox-group="gallery" title="De gloria em gloria. Jornal do Brasil, setembro 1907">
-                                    <img id="lupa20" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-
-                             <div class="seta-direita" style=" left:92%; top:-514%;"></div>
-                        </div>
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-617.5%;"></div>
+                        
+						</div>
 
 
                         <!--26: FEBRE AMARELA De sucesso em sucesso. Jornal do Brasil, 12 fevereiro 1908-->
                         <div style="background-size:100% 100% ;background-image:url('images/interna_26.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-70%; top:-43%; width:250%; height:600%;  margin:0; padding:1px 1px; " >
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/22.jpg" data-fancybox-group="gallery" title="Em Berlim. O Malho, 12 outubro 1907">
                                     <img src="images/22.jpg" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
+							<div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
-                            <div id="seletor08" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/22.jpg" data-fancybox-group="gallery" title="Em Berlim. O Malho, 12 outubro 1907">
-                                    <img id="lupa21" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
 
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-514%; "></div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-617.8%; "></div>
                         </div>
 
 
                         <!--27: FEBRE AMARELA Em Berlim. O Malho, 12 outubro 1907-->                        
                         <div style="background-size:100% 100% ;background-image:url('images/interna_27.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-70%; top:-43%; width:250%; height:600%;  margin:0; padding:1px 1px; " >
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/23.jpg" data-fancybox-group="gallery" title="De sucesso em sucesso. Jornal do Brasil, 12 fevereiro 1908">
                                     <img src="images/23.jpg" alt=""  width="100%" height="auto" /></a>
@@ -1842,22 +1935,30 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor09" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
-
-
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/23.jpg" data-fancybox-group="gallery" title="De sucesso em sucesso. Jornal do Brasil, 12 fevereiro 1908">
-                                    <img id="lupa22" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
-                            </div>
-
-                             <div class="seta-direita" style=" left:92%; top:-514%;"></div>
+                             <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
 							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
+
+
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+                            </div>
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-617.5%;"></div>
+                        
+						</div>
 
                         <!--28: FEBRE AMARELA De sucesso em sucesso. Jornal do Brasil, 12 fevereiro 1908-->
 
                         <div style="background-size:100% 100% ;background-image:url('images/interna_28.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-100%; top:-45%; width:300%; height:600%;">
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/24.jpg" data-fancybox-group="gallery" title="O despeito da vencida. O País, 19 de  fevereiro de  1908">
                                     <img src="images/24.jpg" alt=""  width="100%" height="auto" /></a>
@@ -1865,22 +1966,28 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor10" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                           <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/24.jpg" data-fancybox-group="gallery" title="O despeito da vencida. O País, 19 de  fevereiro de  1908">
-                                    <img id="lupa23" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
 
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-514%; "></div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-617.8%; "></div>
                         </div>
 
                         <!--29: FEBRE AMARELA Outro vitorioso. Tribuna, 10 agosto 1908-->
 
                         <div style="background-size:100% 100% ;background-image:url('images/interna_29.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-70%; top:-45%; width:250%; height:600%;">
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/25.jpg" data-fancybox-group="gallery" title="Outro vitorioso. Tribuna, 10 agosto 1908">
                                     <img src="images/25.jpg" alt=""  width="100%" height="auto" /></a>
@@ -1888,22 +1995,30 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor11" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/25.jpg" data-fancybox-group="gallery" title="Outro vitorioso. Tribuna, 10 agosto 1908">
-                                    <img id="lupa24" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-
-                             <div class="seta-direita" style=" left:92%; top:-514%;"></div>
-                        </div>
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-617.5%;"></div>
+                        
+						</div>
 
                         <!--30: PESTE BUBÔNICA Espertalhão. S.l.;s.d.-->
 
                         <div style="background-size:100% 100% ;background-image:url('images/interna_30.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-70%; top:-45%; width:250%; height:600%;">
+                            <div style="position:relative; left:-90%; top:-58%; width:280%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/26.jpg" data-fancybox-group="gallery" title="Espertalh&atilde;o. S.l.;s.d.8">
                                     <img src="images/26.jpg" alt=""  width="100%" height="auto" /></a>
@@ -1911,46 +2026,58 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor12" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/26.jpg" data-fancybox-group="gallery" title="Espertalh&atilde;o. S.l.;s.d.8">
-                                    <img id="lupa25" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
 
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-514%; "></div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-617.8%; "></div>
                         </div>
 
                         <!--31: PESTE BUBÔNICA Novo Commercio Oswaldico.Tagarela, 4 agosto 1904-->
 
                         <div style="background-size:100% 100% ;background-image:url('images/interna_31.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-100%; top:-45%; width:300%; height:600%;">
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/27.jpg" data-fancybox-group="gallery" title="Novo Commercio Oswaldico.Tagarela, 4 agosto 1904">
                                     <img src="images/27.jpg" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
+							<div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
-                            <div id="seletor13" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/27.jpg" data-fancybox-group="gallery" title="Novo Commercio Oswaldico.Tagarela, 4 agosto 1904">
-                                    <img id="lupa26" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-							<div class="seta-direita" style=" left:92%; top:-514%;"></div>
-
-
-                        </div>
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-617.5%;"></div>
+                        
+						</div>
 
                         <!--32: PESTE BUBÔNICA A autenticidade dos ratos. Jornal do Brasil, 11 agosto 1904-->
 
                         <div style="background-size:100% 100% ;background-image:url('images/interna_32.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-100%; top:-45%; width:300%; height:600%;">
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/28.jpg" data-fancybox-group="gallery" title="A autenticidade dos ratos. Jornal do Brasil, 11 agosto 1904">
                                     <img src="images/28.jpg" alt=""  width="100%" height="auto" /></a>
@@ -1958,15 +2085,21 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor14" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/28.jpg" data-fancybox-group="gallery" title="A autenticidade dos ratos. Jornal do Brasil, 11 agosto 1904">
-                                    <img id="lupa27" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
 
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-514%; "></div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-617.8%; "></div>
                         </div>
 
 
@@ -1974,7 +2107,7 @@ and open the template in the editor.
                         <!--33: PESTE BUBÔNICA Desratização. S.l.;s.d.-->
                         <div style="background-size:100% 100% ;background-image:url('images/interna_33.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-70%; top:-45%; width:250%; height:600%;">
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/29.jpg" data-fancybox-group="gallery" title="Desratiza&ccedil;&atilde;o. S.l.;s.d.">
                                     <img src="images/29.jpg" alt=""  width="100%" height="auto" /></a>
@@ -1982,22 +2115,30 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor15" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                           <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/29.jpg" data-fancybox-group="gallery" title="Desratiza&ccedil;&atilde;o. S.l.;s.d.">
-                                    <img id="lupa28" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-
-							<div class="seta-direita" style=" left:92%; top:-514%;"></div>
-                        </div>
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-617.5%;"></div>
+                        
+						</div>
 
                         <!--34: VARIOLA Ao herói dos mosquitos. Revista da Semana. 1904-->
 
                         <div style="background-size:100% 100% ;background-image:url('images/interna_34.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-70%; top:-45%; width:250%; height:600%;">
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/30.jpg" data-fancybox-group="gallery" title="Ao her&oacute;i dos mosquitos. Revista da Semana. 1904">
                                     <img src="images/30.jpg" alt=""  width="100%" height="auto" /></a>
@@ -2005,22 +2146,28 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor16" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/30.jpg" data-fancybox-group="gallery" title="Ao her&oacute;i dos mosquitos. Revista da Semana. 1904">
-                                    <img id="lupa29" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
 
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-514%; "></div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-617.8%; "></div>
                         </div>
 						
                         <!--35: VARIOLA A varíola. S.l.; 17 julho 1904-->
 
                         <div style="background-size:100% 100% ;background-image:url('images/interna_35.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-100%; top:-45%; width:300%; height:600%;">
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/31.jpg" data-fancybox-group="gallery" title="A var&iacute;ola. S.l.; 17 julho 1904">
                                     <img src="images/31.jpg" alt=""  width="100%" height="auto" /></a>
@@ -2028,22 +2175,30 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor17" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                           <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/31.jpg" data-fancybox-group="gallery" title="A var&iacute;ola. S.l.; 17 julho 1904">
-                                    <img id="lupa30" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-							<div class="seta-direita" style=" left:92%; top:-514%;"></div>
-
-                        </div>
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-617.5%;"></div>
+                        
+						</div>
 
 
                         <!--36: VARIOLA Efeitos da varíola. S.l; c.1904-->
                         <div style="background-size:100% 100% ;background-image:url('images/interna_36.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-70%; top:-45%; width:250%; height:600%;">
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/32.jpg" data-fancybox-group="gallery" title="Efeitos da var&iacute;ola. S.l; c.1904">
                                     <img src="images/32.jpg" alt=""  width="100%" height="auto" /></a>
@@ -2051,22 +2206,28 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor18" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/32.jpg" data-fancybox-group="gallery" title="Efeitos da var&iacute;ola. S.l; c.1904">
-                                    <img id="lupa31" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-514%; "></div>
-	
-						</div>
+
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-617.8%; "></div>
+                        </div>
 
                         <!--37: VARIOLA Honni soit qui mal y pense. S.l.s.d.-->
 
                         <div style="background-size:100% 100% ;background-image:url('images/interna_37.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-100%; top:-45%; width:300%; height:600%;">
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/33.jpg" data-fancybox-group="gallery" title="Honni soit qui mal y pense. S.l.s.d.">
                                     <img src="images/33.jpg" alt=""  width="100%" height="auto" /></a>
@@ -2074,23 +2235,30 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor19" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/33.jpg" data-fancybox-group="gallery" title="Honni soit qui mal y pense. S.l.s.d.">
-                                    <img id="lupa032" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-							<div class="seta-direita" style=" left:92%; top:-514%;"></div>
-
-						
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-617.5%;"></div>
+                        
 						</div>
 
 
                         <!--38: VARIOLA A vaccina obrigatoria. O Malho, 13 agosto 1904-->
                         <div style="background-size:100% 100% ;background-image:url('images/interna_38.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-125%; top:-45%; width:350%; height:600%;">
+                            <div style="position:relative; left:-150%; top:-58%; width:400%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/34.jpg" data-fancybox-group="gallery" title="A vaccina obrigatoria. O Malho, 13 agosto 1904">
                                     <img src="images/34.jpg" alt=""  width="100%" height="auto" /></a>
@@ -2098,23 +2266,28 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor20" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/34.jpg" data-fancybox-group="gallery" title="A vaccina obrigatoria. O Malho, 13 agosto 1904">
-                                    <img id="lupa33" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
 
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-514%; "></div>
-
-						</div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-617.8%; "></div>
+                        </div>
 
                         <!--39: VARIOLA A vacineida. Tragédia lírica fantasmagórica. Cena penúltima. Correio da Manhã[?], 14 agosto 1904-->
 
                         <div style="background-size:100% 100% ;background-image:url('images/interna_39.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-125%; top:-45%; width:350%; height:600%;">
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/35.jpg" data-fancybox-group="gallery" title="A vacineida. Trag&eacute;dia l&iacute;rica fantasmag&oacute;rica. Cena pen&uacute;ltima. Correio da Manh&atilde;[?], 14 agosto 1904">
                                     <img src="images/35.jpg" alt=""  width="100%" height="auto" /></a>
@@ -2122,22 +2295,30 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor21" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                           <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/35.jpg" data-fancybox-group="gallery" title="A vacineida. Trag&eacute;dia l&iacute;rica fantasmag&oacute;rica. Cena pen&uacute;ltima. Correio da Manh&atilde;[?], 14 agosto 1904">
-                                    <img id="lupa34" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-							<div class="seta-direita" style=" left:92%; top:-514%;"></div>
-
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-617.5%;"></div>
+                        
 						</div>
 
                         <!--40: VARIOLA Com a higiene. S.l.;s.d.-->
 
                         <div style="background-size:100% 100% ;background-image:url('images/interna_40.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-100%; top:-45%; width:300%; height:600%;">
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/36.jpg" data-fancybox-group="gallery" title="Com a higiene. S.l.;s.d.">
                                     <img src="images/36.jpg" alt=""  width="100%" height="auto" /></a>
@@ -2145,22 +2326,27 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor22" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/36.jpg" data-fancybox-group="gallery" title="Com a higiene. S.l.;s.d.">
-                                    <img id="lupa35" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
 
-                             <div class="seta-esquerda" style="position:relative; left:1%; top:-514%; "></div>
-
-						</div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-617.8%; "></div>
+                        </div>
 
                         <!--41: VARIOLA Fui vaccinado. S.l.;s.d.-->
 						<div style="background-size:100% 100% ;background-image:url('images/interna_41.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-100%; top:-45%; width:300%; height:600%;">
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/37.jpg" data-fancybox-group="gallery" title="Fui vaccinado. S.l.;s.d.">
                                     <img src="images/37.jpg" alt=""  width="100%" height="auto" /></a>
@@ -2168,16 +2354,23 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor23" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/37.jpg" data-fancybox-group="gallery" title="Fui vaccinado. S.l.;s.d.">
-                                    <img id="lupa36" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-
-                            <div class="seta-direita" style=" left:92%; top:-514%;"></div>
-
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-617.5%;"></div>
+                        
 						</div>
 
 
@@ -2193,18 +2386,22 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor24" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-519%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/38.jpg" data-fancybox-group="gallery" title="A var&iacute;ola. Fia-te na virgem e n&atilde;o corras. Sl.;s.d.">
-                                    <img id="lupa37" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-522.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
 
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-514%; "></div>
-
-						
-						</div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-517.8%; "></div>
+                        </div>
 
 
                         <!--43: VARIOLA Um calhambeque malsinado. O Malho, 24 setembro 1904-->
@@ -2219,23 +2416,30 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor25" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-519%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/39.jpg" data-fancybox-group="gallery" title="Um calhambeque malsinado. O Malho, 24 setembro 1904">
-                                    <img id="lupa38" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-522.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-
-                            <div class="seta-direita" style=" left:92%; top:-514%;"></div>
-
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-517.5%;"></div>
+                        
 						</div>
 
                         <!--44: VARIOLA Os célebres cérebros. S.l.; s.d-->
 
                         <div style="background-size:100% 100% ;background-image:url('images/interna_44.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-70%; top:-45%; width:230%; height:600%;">
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/40.jpg" data-fancybox-group="gallery" title="Os c&eacute;lebres c&eacute;rebros. S.l.; s.d">
                                     <img src="images/40.jpg" alt=""  width="100%" height="auto" /></a>
@@ -2243,23 +2447,28 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor26" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/40.jpg" data-fancybox-group="gallery" title="Os c&eacute;lebres c&eacute;rebros. S.l.; s.d">
-                                    <img id="lupa39" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
 
-								<div class="seta-esquerda" style="position:relative; left:1%; top:-514%; "></div>
-
-						</div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-617.8%; "></div>
+                        </div>
 
                         <!--45: VARIOLA Vacina obrigatória. Revista da Semana. 2 outubro, ano V -->
 
                          <div style="background-size:100% 100% ;background-image:url('images/interna_45.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-70%; top:-45%; width:230%; height:600%;">
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/41.jpg" data-fancybox-group="gallery" title="Vacina obrigat&oacute;ria. Revista da Semana. 2 outubro, ano V">
                                     <img src="images/41.jpg" alt=""  width="100%" height="auto" /></a>
@@ -2267,16 +2476,23 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor27" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/41.jpg" data-fancybox-group="gallery" title="Vacina obrigat&oacute;ria. Revista da Semana. 2 outubro, ano V">
-                                    <img id="lupa40" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-
-                            <div class="seta-direita" style=" left:92%; top:-514%;"></div>
-
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-617.5%;"></div>
+                        
 						</div>
 
                         <!--46: VARIOLA O espeto Obrigatório. A Avenida, s.d.-->
@@ -2292,17 +2508,22 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor28" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-519%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/42.jpg" data-fancybox-group="gallery" title="O espeto Obrigat&oacute;rio. A Avenida, s.d.">
-                                    <img id="lupa41" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-522.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
 
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-514%; "></div>
-
-						</div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-517.8%; "></div>
+                        </div>
 
 
                         <!--47: VARIOLA Guerra Vaccino-obrigateza. O Malho, 29 outubro 1904 -->						
@@ -2317,16 +2538,23 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor29" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-519%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/43.jpg" data-fancybox-group="gallery" title="Guerra Vaccino-obrigateza. O Malho, 29 outubro 1904">
-                                    <img id="lupa042" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-522.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-
-                            <div class="seta-direita" style=" left:92%; top:-514%;"></div>
-
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-517.5%;"></div>
+                        
 						</div>
 
                         <!--48: VARIOLA Dous emblemas. O da vaccina obrigatoria e o da resistência, idem. S.l.; 19 novembro 1904-->
@@ -2341,17 +2569,22 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor30" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                             <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-519%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/44.jpg" data-fancybox-group="gallery" title="Dous emblemas. O da vaccina obrigatoria e o da resist&ecirc;ncia, idem. S.l.; 19 novembro 1904">
-                                    <img id="lupa43" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-522.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
 
-                                <div class="seta-esquerda" style="position:relative; left:1%; top:-514%; "></div>
-
-						</div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-517.8%; "></div>
+                        </div>
 
 
                         <!--49: VARIOLA Em caminho para a ilha do bicho. O Malho, 26 novembro 1904 -->
@@ -2366,23 +2599,32 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor31" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/45.jpg" data-fancybox-group="gallery" title="Em caminho para a ilha do bicho. O Malho, 26 novembro 1904">
-                                    <img id="lupa44" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-519%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
+
+
+
+                            <div class="lupa" style="left:53%; top:-522.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-
-                            <div class="seta-direita" style=" left:92%; top:-514%;"></div>
-
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-517.5%;"></div>
+                        
 						</div>
 
                         <!--50: VARIOLA Cólera de Bexiga. Degas, 17 outubro 1908-->
 
                         <div style="background-size:100% 100% ;background-image:url('images/interna_50.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-70%; top:-45%; width:250%; height:600%;">
+                            <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/46.jpg" data-fancybox-group="gallery" title="C&oacute;lera de Bexiga. Degas, 17 outubro 1908">
                                     <img src="images/46.jpg" alt=""  width="100%" height="auto" /></a>
@@ -2390,23 +2632,28 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor32" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/46.jpg" data-fancybox-group="gallery" title="C&oacute;lera de Bexiga. Degas, 17 outubro 1908">
-                                    <img id="lupa045" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
 
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-514%; "></div>
-
-						</div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-617.8%; "></div>
+                        </div>
 						
 						
                         <!--51: VIAGENS Pyretro. S.l.;s.d. -->						
                         <div style="background-size:100% 100% ;background-image:url('images/interna_51.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-55%; top:-45%; width:200%; height:600%;">
+                            <div style="position:relative; left:-85%; top:-58%; width:270%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/47.jpg" data-fancybox-group="gallery" title="Pyretro. S.l.;s.d.">
                                     <img src="images/47.jpg" alt=""  width="100%" height="auto" /></a>
@@ -2414,16 +2661,23 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor33" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/47.jpg" data-fancybox-group="gallery" title="Pyretro. S.l.;s.d.">
-                                    <img id="lupa046" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-
-                            <div class="seta-direita" style=" left:92%; top:-514%;"></div>
-
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-617.5%;"></div>
+                        
 						</div>
 
                         <!--52: VIAGENS A viagem do czar dos mosquitos. Recepção na Vitória. O Malho, 7 outubro 1905-->
@@ -2438,17 +2692,22 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor34" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-519%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/48.jpg" data-fancybox-group="gallery" title="A viagem do czar dos mosquitos. Recep&ccedil;&atilde;o na Vit&oacute;ria. O Malho, 7 outubro 1905">
-                                    <img id="lupa47" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-522.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
 
-							<div class="seta-esquerda" style="position:relative; left:1%; top:-514%; "></div>
-
-						</div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-517.8%; "></div>
+                        </div>
 
                         <!--53: VIAGENS A viagem do czar dos mosquitos. Chegada a Bahia. O Malho, 14 outubro 1905 -->
 
@@ -2462,16 +2721,23 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor35" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-519%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/49.jpg" data-fancybox-group="gallery" title="A viagem do czar dos mosquitos. Chegada a Bahia. O Malho, 14 outubro 1905">
-                                    <img id="lupa48" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-522.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-
-                            <div class="seta-direita" style=" left:92%; top:-514%;"></div>
-
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-517.5%;"></div>
+                        
 						</div>
 
 
@@ -2487,18 +2753,22 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor36" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                           <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-519%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/50.jpg" data-fancybox-group="gallery" title="A viagem do czar dos mosquitos. Chegada ao Recife. O Malho [?]. S.d.">
-                                    <img id="lupa49" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-522.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
 
-                            							<div class="seta-esquerda" style="position:relative; left:1%; top:-514%; "></div>
-
-						
-						</div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-517.8%; "></div>
+                        </div>
 
                         <!--55: VIAGENS A viagem do czar dos mosquitos. Chegada ao Ceará. O Malho [?]. S.d. -->
 
@@ -2512,17 +2782,23 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor37" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-514%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-519%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/51.jpg" data-fancybox-group="gallery" title="A viagem do czar dos mosquitos. Chegada ao Cear&aacute;. O Malho [?]. S.d.">
-                                    <img id="lupa50" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-522.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-
-                                                        <div class="seta-direita" style=" left:92%; top:-514%;"></div>
-
-						
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-517.5%;"></div>
+                        
 						</div>
 
                         <!--56: VIAGENS A viagem do czar dos mosquitos. Chegada ao Pará. O Malho, 18 novembro 1905-->
@@ -2537,17 +2813,22 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor38" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-519%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/52.jpg" data-fancybox-group="gallery" title="A viagem do czar dos mosquitos. Chegada ao Par&aacute;. O Malho, 18 novembro 1905">
-                                    <img id="lupa51" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-522.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
 
-                            <div class="seta-esquerda" style="position:relative; left:1%; top:-514%; "></div>
-
-						</div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-517.8%; "></div>
+                        </div>
 
                         <!--57: VIAGENS O grande mágico das coincidências. Em Florianópolis. O Malho, 27 janeiro 1906 -->
 
@@ -2561,22 +2842,29 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor39" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                             <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-519%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/53.jpg" data-fancybox-group="gallery" title="O grande m&aacute;gico das coincid&ecirc;ncias. Em Florian&oacute;polis. O Malho, 27 janeiro 1906">
-                                    <img id="lupa52" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-522.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-
-                               <div class="seta-direita" style=" left:92%; top:-514%;"></div>
-
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-517.5%;"></div>
+                        
 						</div>
 
                         <!--58: VIAGENS Provincia do Pará, 15  de agosto de 1911  -->
                         <div style="background-size:100% 100% ;background-image:url('images/interna_58.jpg');width:100%;height:100%;" class="page">
 
-                            <div style="position:relative; left:-50%; top:-45%; width:200%; height:600%;">
+                            <div style="position:relative; left:-90%; top:-58%; width:280%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/55.jpg" data-fancybox-group="gallery" title="Provincia do Par&aacute;, 15  de agosto de 1911">
                                     <img src="images/55.jpg" alt=""  width="100%" height="auto" /></a>
@@ -2584,17 +2872,22 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor40" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                             <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/55.jpg" data-fancybox-group="gallery" title="Provincia do Par&aacute;, 15  de agosto de 1911">
-                                    <img id="lupa53" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-622.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
 
-                                                        <div class="seta-esquerda" style="position:relative; left:1%; top:-514%; "></div>
-
-						</div>
+                            <div class="seta-esquerda" style="position:relative; left:1%; top:-617.8%; "></div>
+                        </div>
 
                         <!--59: VIAGENS No Pará. O Malho, 25 outubro 1911-->
                         <div style="background-size:100% 100% ;background-image:url('images/interna_59.jpg');width:100%;height:100%;" class="page">
@@ -2607,16 +2900,23 @@ and open the template in the editor.
 
                             </div>
 
-                            <div id="seletor41" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; "></div>
+                             <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-515%; background-image:url(images/indice.png); background-size:100% 100%; ">
+							
+							
+							</div>
+							
+							 <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-519%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
-                            <div class="lupa" style="left:58.8%; top:-519%;">
-                                <a class="lightbox"  href="images/56.jpg" data-fancybox-group="gallery" title="No Par&aacute;. O Malho, 25 outubro 1911">
-                                    <img id="lupa54" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
+
+                            <div class="lupa" style="left:53%; top:-522.5%;">
+                                <a class="lightbox"  href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                    <img id="lupa16" class="image-lupa" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
-
-                            <div class="seta-direita" style=" left:92%; top:-514%;"></div>
-
+							
+							
+                            <div class="seta-direita" style=" left:92%; top:-517.5%;"></div>
+                        
 						</div>
 						
                         <!--60 Página em branco  -->
