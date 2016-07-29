@@ -337,10 +337,13 @@ and open the template in the editor.
 						$(this).each(function(){
 						
 							$("#default").turn('page', 3);
+							
 						});
 						
 
 					});
+					
+					
 					
 					
 
@@ -488,7 +491,72 @@ and open the template in the editor.
                     $("#mobile").show();
 
 
+					$(".book").on("click", '.shield', function (event) {
+						
+						$(this).each(function(){
+						
+							$("#mobile").turn('page', 3);
+							
+						});
+						
 
+					});
+					
+					
+					
+					$(".book").on("click", '.figure01', function (event) {
+						
+						$(this).each(function(){
+						
+							$("#mobile").turn('page', 19);
+							
+						});
+						
+
+					});
+					
+					
+					
+					$(".book").on("click", '.figure02', function (event) {
+						
+						$(this).each(function(){
+						
+							$("#mobile").turn('page', 30);
+							
+						});
+						
+
+					});
+					
+					
+					$(".book").on("click", '.figure03', function (event) {
+						
+						$(this).each(function(){
+						
+							$("#mobile").turn('page', 51);
+							
+						});
+						
+
+					});
+					
+					
+					
+					$(".book").on("click", '.figure04', function (event) {
+						
+						$(this).each(function(){
+						
+							$("#mobile").turn('page', 34);
+							
+						});
+						
+
+					});
+					
+					
+					
+					
+					
 
 
                     $(document).keyup(function (event) {
@@ -520,7 +588,10 @@ and open the template in the editor.
 
                         $("#" + id).attr("src", "images/zoom.png");
 
-                    })
+                    });
+					
+					
+					
 
                     $("body").on('mouseover', '.letra', function (event) {
                         var id = event.target.id;
@@ -534,7 +605,7 @@ and open the template in the editor.
 
                         } else if (id == "letra003") {
 
-                            $("#" + id + "").css('background-image', 'url(images/variola_over.png)');
+                            //$("#" + id + "").css('background-image', 'url(images/variola_over.png)');
 
                         } else if (id == "letra004") {
 
@@ -547,11 +618,14 @@ and open the template in the editor.
 
                     $("body").on('click', '.letra', function (event) {
                         var id = event.target.id;
+						
+						
+						
 
                         if (id == "letra001") {
 
                             $("#mobile").turn('page', 19);
-
+							
 
                         } else if (id == "letra002") {
 
