@@ -56,6 +56,9 @@ body{
   height:auto; 
   padding: 1px 1px 1px 1px;
   z-index: 80;
+  background-image: 100% 100%;
+ background-image: url("../images/fundo_lightbox.jpg");
+  
 }
 #lightbox-background {
     position: absolute;   
