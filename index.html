@@ -65,6 +65,28 @@ and open the template in the editor.
 				
 				
 				
+				$('.shield').each(function(){
+					
+					$(this).html('<div class="tooltipText2"><div class="textStart"></div></div>');
+					
+				
+				});
+				
+				
+				
+				$('.first-lupa').each(function(){
+				
+					
+					
+					$(this).each(function(){
+					
+						$(this).css("left", "70%").css("top", "91%");
+					});
+					
+				
+				});
+				
+				
 				
 				
 				
@@ -72,7 +94,7 @@ and open the template in the editor.
 						
 					$(this).each(function(){
 					
-						$('.image-lupa').attr('src', 'images/zoom_over.png');
+						$(this).find("img").attr('src', 'images/zoom_over.png');
 					});
 					
 
@@ -82,9 +104,30 @@ and open the template in the editor.
 						
 					$(this).each(function(){
 					
-						$('.image-lupa').attr('src', 'images/zoom.png');
+						$(this).find("img").attr('src', 'images/zoom.png');
 					});
 					
+
+                });
+				
+				
+				
+				$(".book").on("mouseover", ".first-lupa", function (event) {
+						
+					$(this).each(function(){
+					
+						$(this).find("img").attr('src', 'images/zoom_over.png');
+					})
+					
+
+                });
+
+				$("body").on("mouseout", '.first-lupa', function (event) {
+						
+					$(this).each(function(){
+					
+						$(this).find("img").attr('src', 'images/zoom.png');
+					});
 
                 });
 				
@@ -332,11 +375,11 @@ and open the template in the editor.
 					
 					
 					
-					$(".book").on("click", '.shield', function (event) {
+					$(".book").on("click", '.textStart', function (event) {
 						
 						$(this).each(function(){
 						
-							$("#default").turn('page', 3);
+							$("#default").turn('page', 1);
 							
 						});
 						
@@ -681,7 +724,7 @@ and open the template in the editor.
 
                         var module = {
                             ratio: 0.763, //1.38,
-							ratioHeight: 1.418,//1.418
+							ratioHeight: 0.75,//1.418
                             init: function (id) {
                                 var me = this;
 
@@ -949,6 +992,8 @@ and open the template in the editor.
             }
 			
 			
+			
+			
 			.tooltip{
 			
 				margin:0;
@@ -996,6 +1041,64 @@ and open the template in the editor.
 				opacity: 0;
 				transition: opacity 1s;
 			}
+			
+			
+			
+			.shield:hover .tooltipText2{
+				visibility:visible;
+				position: relative;
+				top:-400%;
+				left:-150%;
+				z-index: 90;
+				opacity: 1;
+				 
+
+			
+			}
+			
+			.tooltipText2:hover {
+				visibility:visible;	
+			}
+			
+			
+			.tooltipText2 {
+				visibility:hidden;
+				width:350%;
+				height:400%;
+				border-radius:15px;	
+				list-style-type:none;
+				background-image: url('images/fundo_doencas.jpg');
+				background-size: 100% 100%;
+				border: 1px solid black;
+				opacity: 0;
+				transition: opacity 1s;
+				text-align:center;
+			}
+			
+			
+			.textStart{
+				position:relative;
+				width:70%;
+				height:50%;
+				left:15%;
+				top:25%;
+				background-image:url('images/link_campanhas.png');
+				background-size: 100% 100%;
+				background-repeat:no-repeat;
+			
+			}
+			
+			
+			.texto01{
+				width:400px;
+				height:100%;				
+			}
+			
+			.texto01:hover{
+				color:red;	
+			}
+			
+			
 			
 			.peste {
 				visibility:hidden;
@@ -1326,7 +1429,7 @@ and open the template in the editor.
                         <div style="background-size:100% 100% ;background-image:url('images/interna_3.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/1.jpg" data-fancybox-group="gallery" title="Cruzada Oswaldo: os micr&oacute;bios que escapam. O Malho, 25 junho 1910">
                                     <img id="lupa01" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -1354,7 +1457,7 @@ and open the template in the editor.
 						  <div style="background-size:100% 100% ;background-image:url('images/interna_4.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/1epidemia.jpg" data-fancybox-group="gallery" title="As epidemias. Revista da Semana. [1904]">
                                     <img id="lupa02" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -1381,7 +1484,7 @@ and open the template in the editor.
 						<div style="background-size:100% 100% ;background-image:url('images/interna_5.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/2.jpg" data-fancybox-group="gallery" title="Conferencia sinistra. Tagarela, 15 agosto 1904">
                                     <img id="lupa03" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -1407,7 +1510,7 @@ and open the template in the editor.
                         <div style="background-size:100% 100% ;background-image:url('images/interna_6.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/3.jpg" data-fancybox-group="gallery" title="Guilherme tela de arame. Tagarela, 12 de agosto de 1904. J. Carlos">
                                     <img id="lupa04" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -1417,7 +1520,7 @@ and open the template in the editor.
 
                             <div style="position:relative; left:-100%; top:-55%; width:300%; height:700%;  margin:0; padding:1px 1px; " >
 
-                                <a class="lightbox" href="images/3.jpg" data-fancybox-group="gallery" title="Guilherme tela de arame. Tagarela, 12 de agosto de 1904. J. Carlos">
+                                <a class="lightbox" href="images/3.png" data-fancybox-group="gallery" title="Guilherme tela de arame. Tagarela, 12 de agosto de 1904. J. Carlos">
                                     <img src="images/3.jpg" alt=""  width="100%" height="auto" /></a>
 
                             </div>
@@ -1432,7 +1535,7 @@ and open the template in the editor.
                         <div style="background-size:100% 100% ;background-image:url('images/interna_7.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/4.jpg" data-fancybox-group="gallery" title="Higiene a muque. S.l.;s.d.">
                                     <img id="lupa05" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -1442,7 +1545,7 @@ and open the template in the editor.
 
                             <div style="position:relative; left:-160%; top:-55%; width:420%; height:700%; margin:0; padding:1px 1px; " >
 
-                                <a class="lightbox" href="images/4.jpg" data-fancybox-group="gallery" title="Higiene a muque. S.l.;s.d.">
+                                <a class="lightbox" href="images/4.png" data-fancybox-group="gallery" title="Higiene a muque. S.l.;s.d.">
                                     <img src="images/4.jpg" alt=""  width="100%" height="auto" /></a>
 
                             </div>
@@ -1458,7 +1561,7 @@ and open the template in the editor.
                        <div style="background-size:100% 100% ;background-image:url('images/interna_8.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/5.jpg" data-fancybox-group="gallery" title="Na higiene dando ordens. Tagarela, 1904">
                                     <img id="lupa06" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -1484,7 +1587,7 @@ and open the template in the editor.
                       <div style="background-size:100% 100% ;background-image:url('images/interna_9.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/6.jpg" data-fancybox-group="gallery" title="Guarda de honra Oswaldica. Tagarela, 15 setembro 1904">
                                     <img id="lupa07" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -1509,9 +1612,9 @@ and open the template in the editor.
                         <div style="background-size:100% 100% ;background-image:url('images/interna_10.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
-                                <a class="lightbox" style="margin:0; padding:0; " href="images/7.jpg" data-fancybox-group="gallery" title="Luis XIV da seringa&ccedil;&atilde;o. S.l.; 1904">
+                                <a class="c" style="margin:0; padding:0; " href="images/7.jpg" data-fancybox-group="gallery" title="Luis XIV da seringa&ccedil;&atilde;o. S.l.; 1904">
                                     <img id="lupa08" class="image-lupa" style="width:100% !important; height:auto !important;
 									padding : 1px 1px" src="images/zoom.png" alt=""  width="100%" height="auto" /></a>
                             </div>
@@ -1535,7 +1638,7 @@ and open the template in the editor.
                        <div style="background-size:100% 100% ;background-image:url('images/interna_11.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/8.jpg" data-fancybox-group="gallery" title="Cruz, Cruzes. S.l.;1904">
                                     <img id="lupa09" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -1561,7 +1664,7 @@ and open the template in the editor.
                       <div style="background-size:100% 100% ;background-image:url('images/interna_12.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/9.jpg" data-fancybox-group="gallery" title="Dr. Oswaldo Cruz. General da brigada mata-mosquitos. &Uacute;ltimo m&aacute;rtir da ci&ecirc;ncia. Careta, 31 de outubro de 1908. J.Carlos.">
                                     <img id="lupa10" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -1587,7 +1690,7 @@ and open the template in the editor.
                         <div style="background-size:100% 100% ;background-image:url('images/interna_13.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/10.jpg" data-fancybox-group="gallery" title="Aventuras fant&aacute;sticas de um grande ca&ccedil;ador. Ratos e mosquitos. Tartarin no Brasil. O Malho, 4 novembro 1905">
                                     <img id="lupa11" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -1612,7 +1715,7 @@ and open the template in the editor.
                          <div style="background-size:100% 100% ;background-image:url('images/interna_14.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/11.jpg" data-fancybox-group="gallery" title="Aventuras fant&aacute;sticas de um grande ca&ccedil;ador. O sonho. O Malho, 18 novembro 1905">
                                     <img id="lupa12" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -1637,7 +1740,7 @@ and open the template in the editor.
                         <div style="background-size:100% 100% ;background-image:url('images/interna_15.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/12.jpg" data-fancybox-group="gallery" title="Aventuras fant&aacute;sticas de um grande ca&ccedil;ador. Fim de um sonho e prel&uacute;dios da realidade. O Malho, 2 dezembro 1905">
                                     <img id="lupa13" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -1662,7 +1765,7 @@ and open the template in the editor.
                          <div style="background-size:100% 100% ;background-image:url('images/interna_16.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/13.jpg" data-fancybox-group="gallery" title="De volta. S.l.;s.d.">
                                     <img id="lupa14" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -1673,7 +1776,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-117%; top:-55%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/13.jpg" data-fancybox-group="gallery" title="De volta. S.l.;s.d.">
-                                    <img src="images/13.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/13.png" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
@@ -1688,7 +1791,7 @@ and open the template in the editor.
                         <div style="background-size:100% 100% ;background-image:url('images/interna_17.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/14.jpg" data-fancybox-group="gallery" title="Le docteur Oswaldo Cruz, de Rio de Janeiro. Chanteclair, Paris. Outubro 1911">
                                     <img id="lupa15" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -1736,7 +1839,7 @@ and open the template in the editor.
 
                                 <div class="febre" style="position:relative; top:0%; left:0%; background-size:100% 100% ;background-image:url('images/indice_variola.jpg'); background-repeat:no-repeat; width:100%;height:80%;" ></div>
 
-                                <div id="letra03" class="letra" style="position:relative; top:0%; left:0%; background-size:100% 100% ;background-image:url('images/variola.png');background-repeat:no-repeat;width:80%;height:13%;" ></div>
+                                <div id="letra033" class="letra" style="position:relative; top:0%; left:0%; background-size:100% 100% ;background-image:url('images/variola.png');background-repeat:no-repeat;width:80%;height:13%;" ></div>
 
                             </div>
 
@@ -1976,7 +2079,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/22.jpg" data-fancybox-group="gallery" title="Em Berlim. O Malho, 12 outubro 1907">
-                                    <img src="images/22.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/22_traco.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -2004,7 +2107,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/23.jpg" data-fancybox-group="gallery" title="De sucesso em sucesso. Jornal do Brasil, 12 fevereiro 1908">
-                                    <img src="images/23.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/23_traco.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -2035,7 +2138,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/24.jpg" data-fancybox-group="gallery" title="O despeito da vencida. O País, 19 de  fevereiro de  1908">
-                                    <img src="images/24.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/24_traco.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -2064,7 +2167,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/25.jpg" data-fancybox-group="gallery" title="Outro vitorioso. Tribuna, 10 agosto 1908">
-                                    <img src="images/25.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/25_traco.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -2244,7 +2347,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/31.jpg" data-fancybox-group="gallery" title="A var&iacute;ola. S.l.; 17 julho 1904">
-                                    <img src="images/31.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/31_traco.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -2275,7 +2378,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/32.jpg" data-fancybox-group="gallery" title="Efeitos da var&iacute;ola. S.l; c.1904">
-                                    <img src="images/32.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/32_traco.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -2304,7 +2407,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/33.jpg" data-fancybox-group="gallery" title="Honni soit qui mal y pense. S.l.s.d.">
-                                    <img src="images/33.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/33_traco.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -2335,7 +2438,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-150%; top:-58%; width:400%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/34.jpg" data-fancybox-group="gallery" title="A vaccina obrigatoria. O Malho, 13 agosto 1904">
-                                    <img src="images/34.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/34_traco.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -2395,7 +2498,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/36.jpg" data-fancybox-group="gallery" title="Com a higiene. S.l.;s.d.">
-                                    <img src="images/36.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/36_traco.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -2423,7 +2526,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="fancybox" href="images/37.jpg" data-fancybox-group="gallery" title="Fui vaccinado. S.l.;s.d.">
-                                    <img src="images/37.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/37_traco.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -2668,7 +2771,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-125%; top:-45%; width:350%; height:600%;">
 
                                 <a class="fancybox" href="images/45.jpg" data-fancybox-group="gallery" title="Em caminho para a ilha do bicho. O Malho, 26 novembro 1904">
-                                    <img src="images/45.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/45_traco.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -3029,7 +3132,7 @@ and open the template in the editor.
                         <div style="background-size:100% 100% ;background-image:url('images/interna_3_port.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/1.jpg" data-fancybox-group="gallery" title="Cruzada Oswaldo: os micr&oacute;bios que escapam. O Malho, 25 junho 1910">
                                     <img id="lupa001" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -3058,7 +3161,7 @@ and open the template in the editor.
 						  <div style="background-size:100% 100% ;background-image:url('images/interna_4_port.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/1epidemia.jpg" data-fancybox-group="gallery" title="As epidemias. Revista da Semana. [1904]">
                                     <img id="lupa002" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -3086,7 +3189,7 @@ and open the template in the editor.
 						<div style="background-size:100% 100% ;background-image:url('images/interna_5_port.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/2.jpg" data-fancybox-group="gallery" title="Conferencia sinistra. Tagarela, 15 agosto 1904">
                                     <img id="lupa003" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -3113,7 +3216,7 @@ and open the template in the editor.
                         <div style="background-size:100% 100% ;background-image:url('images/interna_6_port.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/3.jpg" data-fancybox-group="gallery" title="Guilherme tela de arame. Tagarela, 12 de agosto de 1904. J. Carlos">
                                     <img id="lupa004" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -3139,7 +3242,7 @@ and open the template in the editor.
                         <div style="background-size:100% 100% ;background-image:url('images/interna_7_port.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/4.jpg" data-fancybox-group="gallery" title="Higiene a muque. S.l.;s.d.">
                                     <img id="lupa005" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -3166,7 +3269,7 @@ and open the template in the editor.
                        <div style="background-size:100% 100% ;background-image:url('images/interna_8_port.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/5.jpg" data-fancybox-group="gallery" title="Na higiene dando ordens. Tagarela, 1904">
                                     <img id="lupa006" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -3193,7 +3296,7 @@ and open the template in the editor.
                       <div style="background-size:100% 100% ;background-image:url('images/interna_9_port.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/6.jpg" data-fancybox-group="gallery" title="Guarda de honra Oswaldica. Tagarela, 15 setembro 1904">
                                     <img id="lupa007" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -3218,7 +3321,7 @@ and open the template in the editor.
                         <div style="background-size:100% 100% ;background-image:url('images/interna_10_port.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/7.jpg" data-fancybox-group="gallery" title="Luis XIV da seringa&ccedil;&atilde;o. S.l.; 1904">
                                     <img id="lupa008" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -3245,7 +3348,7 @@ and open the template in the editor.
                        <div style="background-size:100% 100% ;background-image:url('images/interna_11_port.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/8.jpg" data-fancybox-group="gallery" title="Cruz, Cruzes. S.l.;1904">
                                     <img id="lupa009" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -3272,7 +3375,7 @@ and open the template in the editor.
                       <div style="background-size:100% 100% ;background-image:url('images/interna_12_port.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/9.jpg" data-fancybox-group="gallery" title="Dr. Oswaldo Cruz. General da brigada mata-mosquitos. &Uacute;ltimo m&aacute;rtir da ci&ecirc;ncia. Careta, 31 de outubro de 1908. J.Carlos.">
                                     <img id="lupa010" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -3299,7 +3402,7 @@ and open the template in the editor.
                         <div style="background-size:100% 100% ;background-image:url('images/interna_13_port.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/10.jpg" data-fancybox-group="gallery" title="Aventuras fant&aacute;sticas de um grande ca&ccedil;ador. Ratos e mosquitos. Tartarin no Brasil. O Malho, 4 novembro 1905">
                                     <img id="lupa011" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -3325,7 +3428,7 @@ and open the template in the editor.
                          <div style="background-size:100% 100% ;background-image:url('images/interna_14_port.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/11.jpg" data-fancybox-group="gallery" title="Aventuras fant&aacute;sticas de um grande ca&ccedil;ador. O sonho. O Malho, 18 novembro 1905">
                                     <img id="lupa012" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -3351,7 +3454,7 @@ and open the template in the editor.
                         <div style="background-size:100% 100% ;background-image:url('images/interna_15_port.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/12.jpg" data-fancybox-group="gallery" title="Aventuras fant&aacute;sticas de um grande ca&ccedil;ador. Fim de um sonho e prel&uacute;dios da realidade. O Malho, 2 dezembro 1905">
                                     <img id="lupa013" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -3377,7 +3480,7 @@ and open the template in the editor.
                          <div style="background-size:100% 100% ;background-image:url('images/interna_16_port.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="first-lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/13.jpg" data-fancybox-group="gallery" title="De volta. S.l.;s.d.">
                                     <img id="lupa014" class="image-lupa" style="width:100% !important; height:auto !important;
@@ -3404,7 +3507,7 @@ and open the template in the editor.
                         <div style="background-size:100% 100% ;background-image:url('images/interna_17_port.jpg');width:100%;height:100%;" class="page">
 							
 
-                            <div class="lupa" style="position:relative; left:57%; top:14%; width:20%; height:auto; z-index: 57; margin:0; padding:0;">
+                            <div class="lupa" style="position:relative; left:70%; top:89%; width:20%; height:auto; z-index: 90; margin:0; padding:0;">
 
                                 <a class="lightbox" style="margin:0; padding:0; " href="images/14.jpg" data-fancybox-group="gallery" title="Le docteur Oswaldo Cruz, de Rio de Janeiro. Chanteclair, Paris. Outubro 1911">
                                     <img id="lupa015" class="image-lupa" style="width:100% !important; height:auto !important;
