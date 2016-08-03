@@ -931,7 +931,7 @@ and open the template in the editor.
 
 
             a {
-                cursor: url('images/icone_zoom_cursor.gif'), default;
+               
 
                 z-index: 555;
             }
@@ -1344,7 +1344,6 @@ and open the template in the editor.
 				position:relative;
 				height:100%;
 				width:70%;
-				border:solid 1px blue;
 				min-height:50px;
 				max-height:100px;
 				margin:0;
@@ -1358,7 +1357,6 @@ and open the template in the editor.
 				top:0;
 				height:100%;
 				width:100%;
-				border:solid 1px pink;
 				min-height:50px;
 				max-height:100px;
 				margin:0;
@@ -1367,10 +1365,10 @@ and open the template in the editor.
 			}
 			
 			.testeira-icon2 a  img {
-			position:relative;
+                                position:relative;
 				top:0;
-			width:100%;
-			height:100%;
+                                width:100%;
+                                height:100%;
 				margin:0;
 				padding:0;
 				
@@ -1379,6 +1377,129 @@ and open the template in the editor.
 			}
 			
 			
+			.testeira-icon3 {
+				position:relative;
+				top:-100%;
+				left:80%;
+				height:100%;
+				width:10%;
+				min-width:50px;
+				padding:0;
+			
+			}
+			
+			.testeira-icon3 a{
+				position:relative;
+				top:0;
+				height:100%;
+				width:100%;
+				
+				min-width:50px;
+				margin:0;
+				padding:0;
+			
+			}
+			
+			.testeira-icon2 a  img {
+			position:relative;
+				top:0;
+                            width:100%;
+                            height:100%;
+				margin:0;
+				padding:0;
+				
+			}
+			
+			
+			@media screen and (max-width: 1024px) {
+                            
+                            
+                            .fundo-testeira{
+                                
+                                left:10%;
+                                border:none;
+                                
+                            }
+                            
+                            .testeira-icon2 a  img {
+                                position:relative;
+                                top:0;
+                                max-width: 100%;
+                                margin:0;
+                                padding:0;
+                                border:0;
+
+                            }
+                            
+                            
+                            .testeira-icon3{
+                                position: absolute;
+                                 top:60%;
+                                 margin: 0;
+                                 padding: 0;
+                                
+                            }
+                            
+                            .testeira-icon3 a{
+                               border:none;
+                            }
+                            
+                            .testeira-icon3 img {
+                                max-width: 100%;
+                                border:0;
+                                
+                            }
+                        }
+                        
+                        @media screen and (min-width: 1025px) {                            
+                                                               
+                            header{
+                                position:relative;
+				top:0;
+				width:100%;
+                                
+				min-height:120px;
+				max-height:120px;
+				background-color: #171717;
+                            }
+                            
+                            .fundo-testeira{
+                                
+                                left:10%;
+                                border:none;
+                                
+                            }
+                            
+                            .testeira-icon2 a  img {
+                                position:relative;
+                                top:0;
+                                max-width: 100%;
+                                margin:0;
+                                padding:0;
+                                border:0;
+
+                            }
+                            
+                            
+                            .testeira-icon3{
+                                position: absolute;
+                                 top:60%;
+                                 margin: 0;
+                                 padding: 0;
+                                
+                            }
+                            
+                            .testeira-icon3 a{
+                               border:none;
+                            }
+                            
+                            .testeira-icon3 img {
+                                max-width: 100%;
+                                border:0;
+                                
+                            }
+                        
+                        }
 
 
         </style>
@@ -1389,6 +1510,11 @@ and open the template in the editor.
                 <div class="testeira-icon2">
                     <a title="Ir para a p&aacute;gina inicial" href="../index.php"><img src="images/testeira_site.jpg"   alt="Biblioteca Virtual Oswaldo Cruz"/></a>
                 </div>
+				
+				<div class="testeira-icon3">
+                    <a href="../index.php"><img src="images/voltar-seta.png" alt="" width="100%" /></a>
+                </div>
+            </div>
             </div>
         </header>		
         <div id="flipbook">
@@ -2121,7 +2247,7 @@ and open the template in the editor.
 
                             <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
-                                <a class="fancybox" href="images/24.jpg" data-fancybox-group="gallery" title="O despeito da vencida. O País, 19 de  fevereiro de  1908">
+                                <a class="lightbox" href="images/24.jpg" data-fancybox-group="gallery" title="O despeito da vencida. O País, 19 de  fevereiro de  1908">
                                     <img src="images/24_traco.png" alt=""  width="100%" height="auto" /></a>
 
 

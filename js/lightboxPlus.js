@@ -13,6 +13,15 @@
             var menu = $("<div/>", {id:"lightbox-menu"});
             var textt = $("<h6/>", {id:"lightbox-text"});
             
+           // $(".lightbox").css("cursor","crosshair");
+            
+            
+            
+            $(this).each(function () {
+
+                        $(this).find("img").css("cursor","crosshair");
+            });
+            
             menu.append(buttont);
             background.append(menu);
             background.append(lightbox);
