@@ -29,21 +29,68 @@ body{
 }
 
 
-#lightbox-button {
-	position:relative;
-    float:right;
-    margin:0;
-	background-image: url("../images/botao_fechar.png");
-	background-size:100% 100%;
-	margin-right:18%;
-	top:68%;
-	width:115px;
-	height:23px;
+@media screen and (min-width: 1025px) {
+	#lightbox-button {
+		position:relative;
+		float:right;
+		margin:0;
+		background-image: url("../images/botao_fechar.png");
+		background-size:100% 100%;
+		margin-right:18%;
+		top:59%;
+		width:105px;
+		height:34px;
+	}
+	
+	
+	#lightbox-text{
+		position: relative;
+		width: 60%;
+		font-size: 100%;
+		left:18.5%;
+		margin-right:10%;
+		top:70%;
+		margin:0;
+		text-align: left;
+		font-family:"HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-weight:200;
+		color:#fff;
+
+	}
+
+}
+
+@media screen and (max-width: 1024px) {
+	#lightbox-button {
+		position:relative;
+		float:right;
+		margin:0;
+		background-image: url("../images/botao_fechar.png");
+		background-size:100% 100%;
+		margin-right:18%;
+		top:50%;
+		width:9%;
+		height:30%;
+	}
+	
+	
+	#lightbox-text{
+		position: relative;
+		width: 60%;
+		font-size: 100%;
+		left:18.5%;
+		margin-right:10%;
+		top:50%;
+		margin:0;
+		text-align: left;
+		font-family:"HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-weight:200;
+		color:#fff;
+
+	}
 }
 #lightbox-button:hover {
 	background-image: url("../images/botao_fechar_over.png");
-	width:115px;
-	height:23px;
 }	
 	
 #lightbox-button:active {
@@ -56,6 +103,9 @@ body{
   height:auto; 
   padding: 1px 1px 1px 1px;
   z-index: 80;
+  background-image: 100% 100%;
+ background-image: url("../images/fundo_lightbox.jpg");
+  
 }
 #lightbox-background {
     position: absolute;   

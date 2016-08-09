@@ -13,6 +13,16 @@
             var menu = $("<div/>", {id:"lightbox-menu"});
             var textt = $("<h6/>", {id:"lightbox-text"});
             
+           // $(".lightbox").css("cursor","crosshair");
+            
+            
+            
+            $(this).each(function () {
+
+                        $(this).find("img").css("cursor","url(images/lupa_galeria.png), default");
+            });
+            
+            
             menu.append(buttont);
             background.append(menu);
             background.append(lightbox);
@@ -47,17 +57,23 @@
                
             });
 			
-			
+			            $("#lightbox-background").css("cursor","url(images/close.gif), default");
+
 
             $("#lightbox-background").click(function (event) {
+                /*
                 if(event.target.id === "lightbox-background"){
                       //background.fadeOut(600);
                       background.fadeOut(600);
                 }
+                */
+               
+               background.fadeOut(600);
                
             });
             
             $("#lightbox-button").click(function (event) {
+                
                 if(event.target.id === "lightbox-button"){
                     //background.fadeOut(600);
                      background.fadeOut(600);
