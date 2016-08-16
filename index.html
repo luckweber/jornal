@@ -63,16 +63,16 @@ and open the template in the editor.
 
                 });
 
-
+				
 
                 $('.shield').each(function () {
 
-                    $(this).html('<div class="tooltipText2"><div class="textStart"></div></div>');
+                    $(this).attr("title", "Campanhas Sanitárias na Imprensa");
 
 
                 });
 
-
+					
 
                 $('.first-lupa').each(function () {
 
@@ -375,7 +375,7 @@ and open the template in the editor.
 
 
 
-                    $(".book").on("click", '.textStart', function (event) {
+                    $(".book").on("click", '.shield', function (event) {
 
                         $(this).each(function () {
 
@@ -538,7 +538,7 @@ and open the template in the editor.
 
                         $(this).each(function () {
 
-                            $("#mobile").turn('page', 3);
+                            $("#mobile").turn('page', 1);
 
                         });
 
@@ -1976,7 +1976,7 @@ and open the template in the editor.
 
                             <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
-                                <a class="fancybox" href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
+                                <a class="lightbox" href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
                                     <img src="images/15.jpg" alt=""  width="100%" height="auto" /></a>
 
 
