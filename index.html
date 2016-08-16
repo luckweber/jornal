@@ -60,6 +60,7 @@ and open the template in the editor.
                             '<div class="figure04-text"></div>' +
                             '</div>');
 
+<<<<<<< HEAD
 
                 });
 
@@ -73,6 +74,17 @@ and open the template in the editor.
                 });
 
 					
+=======
+
+                });
+
+
+
+                $('.shield').each(function () {
+
+                    $(this).html('<div class="tooltipText2"><div class="textStart"></div></div>');
+
+>>>>>>> master
 
                 $('.first-lupa').each(function () {
 
@@ -88,6 +100,7 @@ and open the template in the editor.
 
 
 
+<<<<<<< HEAD
 
 
                 $(".book").on("mouseover", '.lupa', function (event) {
@@ -95,21 +108,86 @@ and open the template in the editor.
                     $(this).each(function () {
 
                         $(this).find("img").attr('src', 'images/zoom_over.png');
+=======
+                $('.first-lupa').each(function () {
+
+
+
+                    $(this).each(function () {
+
+                        $(this).css("left", "70%").css("top", "91%");
+>>>>>>> master
                     });
 
 
                 });
 
+<<<<<<< HEAD
+                $(".book").on("mouseout", '.lupa', function (event) {
+
+                    $(this).each(function () {
+
+                        $(this).find("img").attr('src', 'images/zoom.png');
+=======
+
+
+
+
+                $(".book").on("mouseover", '.lupa', function (event) {
+
+                    $(this).each(function () {
+
+                        $(this).find("img").attr('src', 'images/zoom_over.png');
+>>>>>>> master
+                    });
+
+
+                });
+
+<<<<<<< HEAD
+
+
+                $(".book").on("mouseover", ".first-lupa", function (event) {
+
+                    $(this).each(function () {
+
+                        $(this).find("img").attr('src', 'images/zoom_over.png');
+                    })
+=======
                 $(".book").on("mouseout", '.lupa', function (event) {
 
                     $(this).each(function () {
 
                         $(this).find("img").attr('src', 'images/zoom.png');
                     });
+>>>>>>> master
 
 
                 });
 
+<<<<<<< HEAD
+                $("body").on("mouseout", '.first-lupa', function (event) {
+
+                    $(this).each(function () {
+
+                        $(this).find("img").attr('src', 'images/zoom.png');
+                    });
+
+                });
+
+
+
+                $(".book").on("mouseover", '.seletor', function (event) {
+
+                    $(this).each(function () {
+
+                        $(this).css('background-image', 'url(images/doencas_over.png)');
+                    });
+
+
+                });
+
+=======
 
 
                 $(".book").on("mouseover", ".first-lupa", function (event) {
@@ -143,6 +221,7 @@ and open the template in the editor.
 
                 });
 
+>>>>>>> master
                 $(".book").on("mouseout", '.seletor', function (event) {
 
                     $(this).each(function () {
@@ -375,7 +454,11 @@ and open the template in the editor.
 
 
 
+<<<<<<< HEAD
                     $(".book").on("click", '.shield', function (event) {
+=======
+                    $(".book").on("click", '.textStart', function (event) {
+>>>>>>> master
 
                         $(this).each(function () {
 
@@ -538,7 +621,11 @@ and open the template in the editor.
 
                         $(this).each(function () {
 
+<<<<<<< HEAD
                             $("#mobile").turn('page', 1);
+=======
+                            $("#mobile").turn('page', 3);
+>>>>>>> master
 
                         });
 
@@ -1231,18 +1318,409 @@ and open the template in the editor.
                 background-image:url('images/viagens.png');
                 background-size: 100% 100%;
 
+<<<<<<< HEAD
                 width:31%;
                 height:5%;
+=======
+            .seta-inicial:hover{
+                background-image:url(images/over_dir.png); 
+
+            }
+
+            .seletor {
+
+                z-index: 555;
+            }
+
+
+            a {
+               
+
+                z-index: 555;
+            }
+
+
+
+
+            .tooltip{
+
+                margin:0;
+                padding:0;
+                background: red;
+                background-image: url('images/indice.png');
+                background-size: 100% 100%;
+                z-index:70;
+
+
+
+            }
+
+            .tooltip:hover {
+                background-image: url('images/indice_over.png');
+
+            }
+
+            .seletor:hover .tooltipText{
+                visibility:visible;
+                position: relative;
+                top:-1100%;
+                left:-600%;
+                z-index: 90;
+                opacity: 1;
+
+
+
+            }
+
+            .tooltipText:hover {
+                visibility:visible;	
+            }
+
+
+            .tooltipText {
+                visibility:hidden;
+                width:800%;
+                height:1100%;
+                border-radius:15px;	
+                list-style-type:none;
+                background-image: url('images/fundo_doencas.jpg');
+                background-size: 100% 100%;
+                border: 1px solid black;
+                opacity: 0;
+                transition: opacity 1s;
+            }
+
+
+
+            .shield:hover .tooltipText2{
+                visibility:visible;
+                position: relative;
+                top:-400%;
+                left:-150%;
+                z-index: 90;
+                opacity: 1;
+
+
+
+            }
+
+            .tooltipText2:hover {
+                visibility:visible;	
+            }
+
+
+            .tooltipText2 {
+                visibility:hidden;
+                width:350%;
+                height:400%;
+                border-radius:15px;	
+                list-style-type:none;
+                background-image: url('images/fundo_doencas.jpg');
+                background-size: 100% 100%;
+                border: 1px solid black;
+                opacity: 0;
+                transition: opacity 1s;
+                text-align:center;
+            }
+
+
+            .textStart{
+                position:relative;
+                width:70%;
+                height:50%;
+                left:15%;
+                top:25%;
+                background-image:url('images/link_campanhas.png');
+                background-size: 100% 100%;
+                background-repeat:no-repeat;
 
             }
 
 
+            .texto01{
+                width:400px;
+                height:100%;				
+            }
+
+            .texto01:hover{
+                color:red;	
+            }
+
+
+
+            .peste {
+                visibility:hidden;
+                position:relative;
+                color:white;
+                background:black;
+                left:-250%;
+                top:-20%;
+                width:150%;
+                height:25%;
+                z-index:100;
+                border-radius:5px;
+                font-size: 70%;
+                margin:0;
+                padding: 5% 7%;
+
+            }
+
+
+            .peste::after {
+                content: " ";
+                position: absolute;
+                top: 50%;
+                left: 100%; /* To the right of the tooltip */
+                margin-top: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: transparent transparent transparent black;
+
+            }
+
+
+            .figure01 {
+                position: relative;
+                top:13%;
+                left:10%;
+                width:30%;
+                height:27%;
+                background: red;
+                border-radius:10px;
+                background-image:url('images/indice_febre.jpg');
+                background-size: 100% 100%;
+                background-position: 100% 100%;
+                background-repeat: no-repeat;
+                border:1px solid black;
+                z-index:80;
+
+            }
+
+            .figure01:hover .peste{
+                visibility:visible;
+            }
+
+
+            .figure01:hover{
+                -webkit-transform: scale(1.3);
+                -ms-transform: scale(1.3);
+                transform: scale(1.3);
+            }
+
+
+
+
+
+
+            .figure01:active {
+                -webkit-transform: scale(0.8);
+                -ms-transform: scale(0.8);
+                transform: scale(0.8);
+            }
+
+
+            .figure01-text:active{
+                -webkit-transform: scale(0.8);
+                -ms-transform: scale(0.8);
+                transform: scale(0.8);
+            }
+
+
+            .figure01-text {
+                position: relative;
+                top:13%;
+                left:10%;
+                background-image:url('images/febre.png');
+                background-size: 100% 100%;
+
+                width:30%;
+                height:7%;
+
+            }
+
+            .figure01-text:hover {
+                position: relative;
+                top:13%;
+                left:10%;
+                background-image:url('images/febre_over.png');
+                background-size: 100% 100%;
+
+                width:30%;
+                height:7%;
+
+                -webkit-transform: scale(1.3);
+                -ms-transform: scale(1.3);
+                transform: scale(1.3);
+
+            }
+
+
+            .figure02 {
+                position: relative;
+                top:-21%;
+                left:60%;
+                width:30%;
+                height:27%;
+                background: red;
+                border-radius:10px;
+                background-image:url('images/indice_peste.jpg');
+                background-size: 100% 100%;
+                background-position: 100% 100%;
+                background-repeat: no-repeat;
+                border:1px solid black;
+                z-index:80;
+
+            }
+
+            .figure02:hover {
+                -webkit-transform: scale(1.3);
+                -ms-transform: scale(1.3);
+                transform: scale(1.3);
+            }
+
+
+            .figure02:active {
+                -webkit-transform: scale(0.8);
+                -ms-transform: scale(0.8);
+                transform: scale(0.8);
+            }
+
+
+            .figure03-text {
+                position: relative;
+                top:-55%;
+                left:60%;
+                background-image:url('images/peste.png');
+                background-size: 100% 100%;
+
+                width:30%;
+                height:7%;
+
+            }
+
+            .figure03-text:hover {
+                background-image:url('images/peste_over.png');
+                -webkit-transform: scale(1.3);
+                -ms-transform: scale(1.3);
+                transform: scale(1.3);
+
+            }
+
+            .figure02-text {
+                position: relative;
+                top:20%;
+                left:9%;
+                background-image:url('images/variola.png');
+                background-size: 100% 100%;
+
+                width:30%;
+                height:7%;
+
+            }
+
+            .figure02-text:hover {
+                background-image:url('images/variola_over.png');
+                -webkit-transform: scale(1.3);
+                -ms-transform: scale(1.3);
+                transform: scale(1.3);
+
+            }
+
+
+
+            .figure03 {
+                position: relative;
+                top:-17%;
+                left:60%;
+                width:30%;
+                height:27%;
+                border-radius:10px;
+                background-image:url('images/indice_viagens.png');
+                background-size: 100% 100%;
+                background-position: 100% 100%;
+                background-repeat: no-repeat;
+                border:1px solid black;
+                z-index:80;
+
+            }
+
+
+
+
+            .figure03:hover {
+                -webkit-transform: scale(1.3);
+                -ms-transform: scale(1.3);
+                transform: scale(1.3);
+            }
+
+            .figure03:active {
+                -webkit-transform: scale(0.8);
+                -ms-transform: scale(0.8);
+                transform: scale(0.8);
+            }
+
+            .figure04 {
+                position: relative;
+                top:-52%;
+                left:10%;
+                width:30%;
+                height:27%;
+                background: red;
+                border-radius:10px;
+                background-image:url('images/indice_variola.jpg');
+                background-size: 100% 100%;
+                background-position: 100% 100%;
+                background-repeat: no-repeat;
+                border:1px solid black;
+                z-index:80;
+
+            }
+
+            .figure04:hover {
+                -webkit-transform: scale(1.3);
+                -ms-transform: scale(1.3);
+                transform: scale(1.3);
+            }
+>>>>>>> master
+
+            .figure04:active {
+                -webkit-transform: scale(0.8);
+                -ms-transform: scale(0.8);
+                transform: scale(0.8);
+            }
+
+
+<<<<<<< HEAD
             .figure04-text:hover {
                 background-image:url('images/viagens_over.png');
+=======
+            .figure04-text {
+                position: relative;
+                top:-50%;
+                left:60%;
+                background-image:url('images/viagens.png');
+                background-size: 100% 100%;
+
+                width:34%;
+                height:8%;
+
+>>>>>>> master
             }
 
             
 
+<<<<<<< HEAD
+=======
+            .figure04-text:hover {
+                background-image:url('images/viagens_over.png');
+                -webkit-transform: scale(1.3);
+                -ms-transform: scale(1.3);
+                transform: scale(1.3);
+            }
+
+            
+
+>>>>>>> master
             #flipbook{
                 overflow:hidden;
                 margin-top:1%;
@@ -1399,9 +1877,14 @@ and open the template in the editor.
                             }
                             
                             .fundo-testeira{
+<<<<<<< HEAD
 							top:5px;
                                 max-width:1100px;
                                 left:20%;
+=======
+                                
+                                left:10%;
+>>>>>>> master
                                 border:none;
                                 
                             }
@@ -1885,7 +2368,11 @@ and open the template in the editor.
 
                                 <div class="febre" style="position:relative; top:0%; left:0%; background-size:100% 100% ;background-image:url('images/indice_variola.jpg'); background-repeat:no-repeat; width:100%;height:80%;" ></div>
 
+<<<<<<< HEAD
                                 <div id="letra03" class="letra" style="position:relative; top:0%; left:0%; background-size:100% 100% ;background-image:url('images/variola.png');background-repeat:no-repeat;width:60%;height:6%;" ></div>
+=======
+                                <div id="letra03" class="letra" style="position:relative; top:0%; left:0%; background-size:100% 100% ;background-image:url('images/variola.png');background-repeat:no-repeat;width:58%;height:7%;" ></div>
+>>>>>>> master
 
                             </div>
 
@@ -1945,15 +2432,26 @@ and open the template in the editor.
 
                                 <a class="lightbox" href="images/16_jornal.png" data-fancybox-group="gallery" title="A praga de culicidios. S.l., 1903">
                                     <img src="images/16_jornal.png" alt=""  width="100%" height="auto" /></a>
+<<<<<<< HEAD
 
 
                             </div>
 
                             <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+=======
+>>>>>>> master
 
 
                             </div>
 
+<<<<<<< HEAD
+=======
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+
+
+                            </div>
+
+>>>>>>> master
                             <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
@@ -2158,11 +2656,24 @@ and open the template in the editor.
 
                             </div>
 
+<<<<<<< HEAD
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+=======
+                                <a class="lightbox" href="images/23_traco.png" data-fancybox-group="gallery" title="De sucesso em sucesso. Jornal do Brasil, 12 fevereiro 1908">
+                                    <img src="images/23_traco.png" alt=""  width="100%" height="auto" /></a>
+>>>>>>> master
+
+
+                            </div>
+
+<<<<<<< HEAD
+=======
                             <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
 
 
                             </div>
 
+>>>>>>> master
                             <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
@@ -3139,6 +3650,14 @@ and open the template in the editor.
 
 
                             <div class="seta-direita" style=" left:92%; top:-517.5%;"></div>
+<<<<<<< HEAD
+=======
+
+                        </div>
+
+                        <!--60 Página em branco  -->
+                        <div style="background-size:100% 100% ;background-image:url('images/60.jpg');width:100%;height:100%;" class="page">
+>>>>>>> master
 
                         </div>
 
@@ -4004,15 +4523,26 @@ and open the template in the editor.
 
                                 <a class="lightbox" href="images/27_traco.png" data-fancybox-group="gallery" title="Novo Commercio Oswaldico.Tagarela, 4 agosto 1904">
                                     <img src="images/27_traco.png" alt=""  width="100%" height="auto" /></a>
+<<<<<<< HEAD
+=======
 
 
                             </div>
 
                             <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+>>>>>>> master
 
 
                             </div>
 
+<<<<<<< HEAD
+                            <div id="seletor01" class="seletor" style="position:relative;  width:5%; height:4%; left:79%; top:-615%; background-image:url(images/indice.png); background-size:100% 100%; ">
+
+
+                            </div>
+
+=======
+>>>>>>> master
                             <div class="shield" style="position:relative;  z-index:66; width:5%; height:4%; left:70%; top:-619%; background-image:url(images/campanhas.png); background-size:100% 100%; "></div>
 
 
@@ -4864,6 +5394,12 @@ and open the template in the editor.
                             <div class="seta-direita" style=" position:relative; left:92.4%; top:-418%;"></div>
                             <div class="seta-esquerda" style="position:relative; left:1%; top:-423%; "></div>
                         </div>
+<<<<<<< HEAD
+=======
+
+                        <!--60 Página em branco  -->
+                        <div style="background-size:100% 100% ;background-image:url('images/60.jpg');width:100%;height:100%;" class="page">
+>>>>>>> master
 
                         <!--60 Página em branco  -->
                         <div style="background-size:100% 100% ;background-image:url('images/pag_60_mobile.jpg');width:100%;height:100%;" class="page">
