@@ -19,7 +19,11 @@
             
             $(this).each(function () {
 
+<<<<<<< HEAD
                         $(this).find("img").css("cursor","url(images/lupa_galeria.png), default");
+=======
+                        $(this).find("img").css("cursor","url(images/lupa.cur), default");
+>>>>>>> master
             });
             
             
