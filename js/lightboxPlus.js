@@ -61,7 +61,7 @@
                
             });
 			
-			            $("#lightbox-background").css("cursor","url(images/close.gif), default");
+			            //$("#lightbox-background").css("cursor","url(images/close.gif), default");
 
 
             $("#lightbox-background").click(function (event) {
