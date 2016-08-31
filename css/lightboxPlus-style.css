@@ -13,20 +13,7 @@ body{
     padding: 0;
 }
 
-#lightbox-text{
-    position: relative;
-    width: 60%;
-    font-size: 100%;
-    left:18.5%;
-    margin-right:10%;
-    top:70%;
-    margin:0;
-    text-align: left;
-	font-family:"HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-weight:200;
-	color:#fff;
 
-}
 
 
 @media screen and (min-width: 1025px) {
@@ -69,18 +56,19 @@ body{
 		background-size:100% 100%;
 		margin-right:18%;
 		top:50%;
-		width:9%;
-		height:30%;
+		width:105px;
+		height:20px;
 	}
 	
 	
 	#lightbox-text{
-		position: relative;
-		width: 60%;
+		position:absolute;
+		width: 50%;
 		font-size: 100%;
 		left:18.5%;
 		margin-right:10%;
-		top:50%;
+		margin-bottom:500px;
+		top:40%;
 		margin:0;
 		text-align: left;
 		font-family:"HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,sans-serif;
