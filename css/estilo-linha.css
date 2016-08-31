@@ -1,0 +1,422 @@
+body {
+	margin: 0 auto;
+	padding:0;
+	background: url('../images/background.jpg');
+
+}
+
+.book  div {
+	margin:0;
+	padding:0;
+}
+
+
+.lupa{
+	position:relative;   
+	width:22%; 
+	height:auto;
+	background-size: 100% 100%;
+	left:53%; top:15%;
+	margin:0;
+	padding:0;
+}
+
+
+.seta-direita{
+	background-image:url(../images/seta_interna_dir.png); 
+	background-size:no-repeat;
+	background-size:100% 100%;
+	position:relative;  
+	width:7%; 
+	height:5%;
+
+}
+
+
+
+
+.seta-direita:hover{
+	background-image:url(../images/seta_internaover_dir.png); 
+
+}
+
+.seta-esquerda {
+
+	position:relative;  
+	width:7%; 
+	height:5%;
+	background-image:url(../images/seta_interna_esq.png); 
+	background-size:no-repeat;
+	background-size:100% 100%;
+}
+
+.seta-esquerda:hover {
+	background-image:url(../images/seta_internaover_esq.png); 
+}
+
+
+.seta-inicial {
+
+	position:relative;  
+	width:5%; 
+	height:3%;
+	background-image:url(../images/seta_dir.png); 
+	background-size:no-repeat;
+	background-size:100% 100%;
+
+}
+
+.seta-inicial:hover{
+	background-image:url(../images/over_dir.png); 
+
+}
+
+.seletor {
+
+z-index: 555;
+}
+
+
+a {
+
+
+z-index: 555;
+}
+
+
+
+
+.tooltip{
+
+	margin:0;
+	padding:0;
+	background: red;
+	background-image: url('../images/indice.png');
+	background-size: 100% 100%;
+	z-index:70;
+
+
+
+}
+
+.tooltip:hover {
+	background-image: url('../images/indice_over.png');
+
+}
+
+.seletor:hover .tooltipText{
+	visibility:visible;
+	position: relative;
+	top:-1100%;
+	left:-600%;
+	z-index: 90;
+	opacity: 1;
+
+
+
+}
+
+.tooltipText:hover {
+	visibility:visible;	
+}
+
+
+.tooltipText {
+	visibility:hidden;
+	width:800%;
+	height:1100%;
+	border-radius:15px;	
+	list-style-type:none;
+	background-image: url('../images/fundo_doencas.jpg');
+	background-size: 100% 100%;
+	border: 1px solid black;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+
+
+.shield:hover .tooltipText2{
+	visibility:visible;
+	position: relative;
+	top:-400%;
+	left:-150%;
+	z-index: 90;
+	opacity: 1;
+
+
+
+}
+
+.tooltipText2:hover {
+	visibility:visible;	
+}
+
+
+.tooltipText2 {
+	visibility:hidden;
+	width:350%;
+	height:400%;
+	border-radius:15px;	
+	list-style-type:none;
+	background-image: url('../images/fundo_doencas.jpg');
+	background-size: 100% 100%;
+	border: 1px solid black;
+	opacity: 0;
+	transition: opacity 1s;
+	text-align:center;
+}
+
+
+.textStart{
+	position:relative;
+	width:70%;
+	height:50%;
+	left:15%;
+	top:25%;
+	background-image:url('../images/link_campanhas.png');
+	background-size: 100% 100%;
+	background-repeat:no-repeat;
+
+}
+
+
+.texto01{
+	width:400px;
+	height:100%;				
+}
+
+.texto01:hover{
+	color:red;	
+}
+
+
+
+.peste {
+	visibility:hidden;
+	position:relative;
+	color:white;
+	background:black;
+	left:-250%;
+	top:-20%;
+	width:150%;
+	height:25%;
+	z-index:100;
+	border-radius:5px;
+	font-size: 70%;
+	margin:0;
+	padding: 5% 7%;
+
+}
+
+
+.peste::after {
+	content: " ";
+	position: absolute;
+	top: 50%;
+	left: 100%; /* To the right of the tooltip */
+	margin-top: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent transparent black;
+
+}
+
+
+.figure01 {
+	position: relative;
+	top:13%;
+	left:10%;
+	width:30%;
+	height:27%;
+	background: red;
+	border-radius:10px;
+	background-image:url('../images/indice_febre.jpg');
+	background-size: 100% 100%;
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	border:1px solid black;
+	z-index:80;
+
+}
+
+.figure01:hover .peste{
+	visibility:visible;
+}
+
+
+
+
+
+
+
+
+.figure01-text {
+	position: relative;
+	top:13%;
+	left:10%;
+	background-image:url('../images/febre.png');
+	background-size: 100% 100%;
+
+	width:30%;
+	height:7%;
+
+}
+
+.figure01-text:hover {
+	position: relative;
+	top:13%;
+	left:10%;
+	background-image:url('../images/febre_over.png');
+	background-size: 100% 100%;
+
+	width:30%;
+	height:7%;
+
+
+}
+
+
+.figure02 {
+	position: relative;
+	top:-21%;
+	left:60%;
+	width:30%;
+	height:27%;
+	background: red;
+	border-radius:10px;
+	background-image:url('../images/indice_peste.jpg');
+	background-size: 100% 100%;
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	border:1px solid black;
+	z-index:80;
+
+}
+
+
+
+
+
+
+.figure03-text {
+	position: relative;
+	top:-52%;
+	left:60%;
+	background-image:url('../images/peste.png');
+	background-size: 100% 100%;
+	width:30%;
+	height:5%;
+
+}
+
+.figure03-text:hover {
+	background-image:url('../images/peste_over.png');
+}
+
+.figure02-text {
+	position: relative;
+	top:16%;
+	left:13%;
+	background-image:url('../images/variola.png');
+	background-size: 100% 100%;
+
+	width:20%;
+	height:4%;
+
+}
+
+.figure02-text:hover {
+	background-image:url('../images/variola_over.png');
+
+}
+
+
+
+.figure03 {
+	position: relative;
+	top:-17%;
+	left:60%;
+	width:30%;
+	height:27%;
+	border-radius:10px;
+	background-image:url('../images/indice_viagens.png');
+	background-size: 100% 100%;
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	border:1px solid black;
+	z-index:80;
+
+}
+
+
+.figure04 {
+	position: relative;
+	top:-50%;
+	left:10%;
+	width:30%;
+	height:27%;
+	background: red;
+	border-radius:10px;
+	background-image:url('../images/indice_variola.jpg');
+	background-size: 100% 100%;
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	border:1px solid black;
+	z-index:80;
+
+}
+
+
+
+
+.figure04-text {
+	position: relative;
+	top:-49%;
+	left:60%;
+	background-image:url('../images/viagens.png');
+	background-size: 100% 100%;
+
+	width:31%;
+	height:5%;
+
+}
+
+
+.figure04-text:hover {
+	background-image:url('../images/viagens_over.png');
+}
+
+
+
+#flipbook{
+	overflow:hidden;
+	margin-top:1%;
+}
+
+
+header {
+	position:relative;
+	top:0;
+	width:100%;
+
+}
+header .marca-bvoc
+{
+	margin-left: 5%;
+}
+
+
+
+	@media screen and (min-width: 1025px) {                            
+										   
+		header{
+			position:relative;
+			top:0;
+			width:100%;
+
+		}
+		
+	
+	}
+

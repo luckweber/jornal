@@ -18,7 +18,7 @@ and open the template in the editor.
         <script src="js/turnResize.js"></script>
         <link rel="stylesheet" href="css/lightboxPlus-style.css" />
         <link rel="stylesheet" href="css/turnRize-style.css" />
-
+		<link rel="stylesheet" type="text/css" href="css/estilo-linha.css">
 
         <script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
 
@@ -237,7 +237,7 @@ and open the template in the editor.
 
 
 
-                if ($(window).width() >= 1300) {
+                if ($(window).width() >= 1200) {
 
                     $(".lightbox").lightplus();
 
@@ -840,618 +840,25 @@ and open the template in the editor.
 
 
                 }
+				
+				
+				
+				$("body").on("mouseover",".marca-bvoc",function(){
+				
+					$(this).find("img").attr("src", "images/simbolo_oswaldo_jornal_over.png");
+				});
+				
+				$("body").on("mouseout",".marca-bvoc",function(){
+				
+					$(this).find("img").attr("src", "images/simbolo_oswaldo_jornal.png");
+				});
             });
 
         </script>
-
-        <style type="text/css">
-
-
-            body {
-                margin: 0 auto;
-				padding:0;
-                background: url('images/background.jpg');
-
-            }
-
-            .book  div {
-                margin:0;
-                padding:0;
-
-            }
-
-
-            .lupa{
-                position:relative;   
-                width:22%; 
-                height:auto;
-                background-size: 100% 100%;
-                left:53%; top:15%;
-                margin:0;
-                padding:0;
-            }
-
-
-            .seta-direita{
-                background-image:url(images/seta_interna_dir.png); 
-                background-size:no-repeat;
-                background-size:100% 100%;
-                position:relative;  
-                width:7%; 
-                height:5%;
-
-            }
-
-
-
-
-            .seta-direita:hover{
-                background-image:url(images/seta_internaover_dir.png); 
-
-            }
-
-            .seta-esquerda {
-
-                position:relative;  
-                width:7%; 
-                height:5%;
-                background-image:url(images/seta_interna_esq.png); 
-                background-size:no-repeat;
-                background-size:100% 100%;
-
-
-            }
-
-            .seta-esquerda:hover {
-                background-image:url(images/seta_internaover_esq.png); 
-
-            }
-
-
-            .seta-inicial {
-
-                position:relative;  
-                width:5%; 
-                height:3%;
-                background-image:url(images/seta_dir.png); 
-                background-size:no-repeat;
-                background-size:100% 100%;
-
-            }
-
-            .seta-inicial:hover{
-                background-image:url(images/over_dir.png); 
-
-            }
-
-            .seletor {
-
-                z-index: 555;
-            }
-
-
-            a {
-               
-
-                z-index: 555;
-            }
-
-
-
-
-            .tooltip{
-
-                margin:0;
-                padding:0;
-                background: red;
-                background-image: url('images/indice.png');
-                background-size: 100% 100%;
-                z-index:70;
-
-
-
-            }
-
-            .tooltip:hover {
-                background-image: url('images/indice_over.png');
-
-            }
-
-            .seletor:hover .tooltipText{
-                visibility:visible;
-                position: relative;
-                top:-1100%;
-                left:-600%;
-                z-index: 90;
-                opacity: 1;
-
-
-
-            }
-
-            .tooltipText:hover {
-                visibility:visible;	
-            }
-
-
-            .tooltipText {
-                visibility:hidden;
-                width:800%;
-                height:1100%;
-                border-radius:15px;	
-                list-style-type:none;
-                background-image: url('images/fundo_doencas.jpg');
-                background-size: 100% 100%;
-                border: 1px solid black;
-                opacity: 0;
-                transition: opacity 1s;
-            }
-
-
-
-            .shield:hover .tooltipText2{
-                visibility:visible;
-                position: relative;
-                top:-400%;
-                left:-150%;
-                z-index: 90;
-                opacity: 1;
-
-
-
-            }
-
-            .tooltipText2:hover {
-                visibility:visible;	
-            }
-
-
-            .tooltipText2 {
-                visibility:hidden;
-                width:350%;
-                height:400%;
-                border-radius:15px;	
-                list-style-type:none;
-                background-image: url('images/fundo_doencas.jpg');
-                background-size: 100% 100%;
-                border: 1px solid black;
-                opacity: 0;
-                transition: opacity 1s;
-                text-align:center;
-            }
-
-
-            .textStart{
-                position:relative;
-                width:70%;
-                height:50%;
-                left:15%;
-                top:25%;
-                background-image:url('images/link_campanhas.png');
-                background-size: 100% 100%;
-                background-repeat:no-repeat;
-
-            }
-
-
-            .texto01{
-                width:400px;
-                height:100%;				
-            }
-
-            .texto01:hover{
-                color:red;	
-            }
-
-
-
-            .peste {
-                visibility:hidden;
-                position:relative;
-                color:white;
-                background:black;
-                left:-250%;
-                top:-20%;
-                width:150%;
-                height:25%;
-                z-index:100;
-                border-radius:5px;
-                font-size: 70%;
-                margin:0;
-                padding: 5% 7%;
-
-            }
-
-
-            .peste::after {
-                content: " ";
-                position: absolute;
-                top: 50%;
-                left: 100%; /* To the right of the tooltip */
-                margin-top: -5px;
-                border-width: 5px;
-                border-style: solid;
-                border-color: transparent transparent transparent black;
-
-            }
-
-
-            .figure01 {
-                position: relative;
-                top:13%;
-                left:10%;
-                width:30%;
-                height:27%;
-                background: red;
-                border-radius:10px;
-                background-image:url('images/indice_febre.jpg');
-                background-size: 100% 100%;
-                background-position: 100% 100%;
-                background-repeat: no-repeat;
-                border:1px solid black;
-                z-index:80;
-
-            }
-
-            .figure01:hover .peste{
-                visibility:visible;
-            }
-
-
-          
-
-
-
-
-
-            .figure01-text {
-                position: relative;
-                top:13%;
-                left:10%;
-                background-image:url('images/febre.png');
-                background-size: 100% 100%;
-
-                width:30%;
-                height:7%;
-
-            }
-
-            .figure01-text:hover {
-                position: relative;
-                top:13%;
-                left:10%;
-                background-image:url('images/febre_over.png');
-                background-size: 100% 100%;
-
-                width:30%;
-                height:7%;
-
-
-            }
-
-
-            .figure02 {
-                position: relative;
-                top:-21%;
-                left:60%;
-                width:30%;
-                height:27%;
-                background: red;
-                border-radius:10px;
-                background-image:url('images/indice_peste.jpg');
-                background-size: 100% 100%;
-                background-position: 100% 100%;
-                background-repeat: no-repeat;
-                border:1px solid black;
-                z-index:80;
-
-            }
-
-          
-
-         
-
-
-            .figure03-text {
-                position: relative;
-                top:-52%;
-                left:60%;
-                background-image:url('images/peste.png');
-                background-size: 100% 100%;
-
-                width:30%;
-                height:5%;
-
-            }
-
-            .figure03-text:hover {
-                background-image:url('images/peste_over.png');
-            }
-
-            .figure02-text {
-                position: relative;
-                top:16%;
-                left:13%;
-                background-image:url('images/variola.png');
-                background-size: 100% 100%;
-
-                width:20%;
-                height:4%;
-
-            }
-
-            .figure02-text:hover {
-                background-image:url('images/variola_over.png');
-
-            }
-
-
-
-            .figure03 {
-                position: relative;
-                top:-17%;
-                left:60%;
-                width:30%;
-                height:27%;
-                border-radius:10px;
-                background-image:url('images/indice_viagens.png');
-                background-size: 100% 100%;
-                background-position: 100% 100%;
-                background-repeat: no-repeat;
-                border:1px solid black;
-                z-index:80;
-
-            }
-
-
-            .figure04 {
-                position: relative;
-                top:-52%;
-                left:10%;
-                width:30%;
-                height:27%;
-                background: red;
-                border-radius:10px;
-                background-image:url('images/indice_variola.jpg');
-                background-size: 100% 100%;
-                background-position: 100% 100%;
-                background-repeat: no-repeat;
-                border:1px solid black;
-                z-index:80;
-
-            }
-
-          
-
-
-            .figure04-text {
-                position: relative;
-                top:-50%;
-                left:60%;
-                background-image:url('images/viagens.png');
-                background-size: 100% 100%;
-
-                width:31%;
-                height:5%;
-
-            }
-
-
-            .figure04-text:hover {
-                background-image:url('images/viagens_over.png');
-            }
-
-            
-
-            #flipbook{
-                overflow:hidden;
-                margin-top:1%;
-            }
-
-			
-			header {
-				position:relative;
-				top:0;
-				width:100%;
-				min-height:50px;
-				max-height:100px;
-				background-color: #171717;
-			
-			}
-			
-			
-			.fundo-testeira {
-				position:relative;
-				top:0;
-				width:80%;
-				height:100%;
-				min-height:50px;
-				max-height:100px;
-				border:solid 1px red;
-				margin:0;
-				padding:0;
-			
-			}
-			
-			
-			
-			.testeira-icon2 {
-				position:relative;
-				height:100%;
-				width:70%;
-				min-height:50px;
-				max-height:100px;
-				margin:0;
-				padding:0;
-			
-			}
-			
-			
-			.testeira-icon2 a{
-				position:relative;
-				top:0;
-				height:100%;
-				width:100%;
-				min-height:50px;
-				max-height:100px;
-				margin:0;
-				padding:0;
-			
-			}
-			
-			.testeira-icon2 a  img {
-                                position:relative;
-				top:0;
-                                width:100%;
-                                height:100%;
-				margin:0;
-				padding:0;
-				
-				min-height:50px;
-				max-height:100px;
-			}
-			
-			
-			.testeira-icon3 {
-				position:relative;
-				top:-100%;
-				left:80%;
-				height:100%;
-				width:10%;
-				min-width:50px;
-				padding:0;
-			
-			}
-			
-			.testeira-icon3 a{
-				position:relative;
-				top:0;
-				height:100%;
-				width:100%;
-				
-				min-width:50px;
-				margin:0;
-				padding:0;
-			
-			}
-			
-			.testeira-icon2 a  img {
-			position:relative;
-				top:0;
-                            width:100%;
-                            height:100%;
-				margin:0;
-				padding:0;
-				
-			}
-			
-			
-			@media screen and (max-width: 1024px) {
-                            
-                            
-                            .fundo-testeira{
-                                
-                                left:10%;
-                                border:none;
-                                
-                            }
-                            
-                            .testeira-icon2 a  img {
-                                position:relative;
-                                top:0;
-                                max-width: 100%;
-                                margin:0;
-                                padding:0;
-                                border:0;
-
-                            }
-                            
-                            
-                            .testeira-icon3{
-                                position: absolute;
-                                 top:60%;
-                                 margin: 0;
-                                 padding: 0;
-                                
-                            }
-                            
-                            .testeira-icon3 a{
-                               border:none;
-                            }
-                            
-                            .testeira-icon3 img {
-                                max-width: 100%;
-                                border:0;
-                                
-                            }
-                        }
-                        
-                        @media screen and (min-width: 1025px) {                            
-                                                               
-                            header{
-                                position:relative;
-				top:0;
-				width:100%;
-                                
-				min-height:120px;
-				max-height:120px;
-				background-color: #171717;
-                            }
-                            
-                            .fundo-testeira{
-							top:5px;
-                                max-width:1100px;
-                                left:20%;
-                                border:none;
-                                
-                            }
-                            
-                            .testeira-icon2 a  img {
-                                position:relative;
-                                top:0;
-                                max-width: 100%;
-                                margin:0;
-                                padding:0;
-                                border:0;
-
-                            }
-                            
-                            
-                            .testeira-icon3{
-                                position: absolute;
-                                 top:60%;
-                                 margin: 0;
-                                 padding: 0;
-                                
-                            }
-                            
-                            .testeira-icon3 a{
-                               border:none;
-                            }
-                            
-                            .testeira-icon3 img {
-                                max-width: 100%;
-                                border:0;
-                                
-                            }
-                        
-                        }
-
-
-        </style>
     </head>
     <body>
         <header>
-            <div class="fundo-testeira">
-                <div class="testeira-icon2">
-                    <a title="Ir para a p&aacute;gina inicial" href="../index.php"><img src="images/testeira_site.jpg"   alt="Biblioteca Virtual Oswaldo Cruz"/></a>
-                </div>
-				
-				<div class="testeira-icon3">
-                    <a href="../index.php"><img src="images/voltar-seta.png" alt="" width="100%" /></a>
-                </div>
-            </div>
-            </div>
+            <a class="marca-bvoc" title="Ir para a p&aacute;gina inicial" href="../index.php"><img src="images/simbolo_oswaldo_jornal.png"   alt="Biblioteca Virtual Oswaldo Cruz"/></a>
         </header>		
         <div id="flipbook">
             <div class="t">
@@ -1567,7 +974,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-100%; top:-55%; width:300%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/3.png" data-fancybox-group="gallery" title="Guilherme tela de arame. Tagarela, 12 de agosto de 1904. J. Carlos">
-                                    <img src="images/3.png" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/p6.png" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
@@ -1592,7 +999,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-160%; top:-55%; width:420%; height:700%; margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/4.png" data-fancybox-group="gallery" title="Higiene a muque. S.l.;s.d.">
-                                    <img src="images/4.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/p7.png" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
@@ -1618,7 +1025,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-160%; top:-55%; width:420%; height:700%; margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/5.jpg" data-fancybox-group="gallery" title="Na higiene dando ordens. Tagarela, 1904">
-                                    <img src="images/5.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/p8.png" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
@@ -1644,7 +1051,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-160%; top:-55%; width:420%; height:700%; margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/6.jpg" data-fancybox-group="gallery" title="Guarda de honra Oswaldica. Tagarela, 15 setembro 1904">
-                                    <img src="images/6.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/p9.png" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
@@ -1669,7 +1076,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-160%; top:-55%; width:420%; height:700%; margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/7.jpg" data-fancybox-group="gallery" title="Luis XIV da seringa&ccedil;&atilde;o. S.l.; 1904">
-                                    <img src="images/7.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/p10.png" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
@@ -1695,7 +1102,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-100%; top:-55%; width:300%; height:700%; margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/8.jpg" data-fancybox-group="gallery" title="Cruz, Cruzes. S.l.;1904">
-                                    <img src="images/8.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/p11.png" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
@@ -1797,7 +1204,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-117%; top:-55%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/12.jpg" data-fancybox-group="gallery" title="Aventuras fant&aacute;sticas de um grande ca&ccedil;ador. Fim de um sonho e prel&uacute;dios da realidade. O Malho, 2 dezembro 1905">
-                                    <img src="images/12.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/p15.png" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
@@ -1848,7 +1255,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-117%; top:-55%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/14.jpg" data-fancybox-group="gallery" title="Le docteur Oswaldo Cruz, de Rio de Janeiro. Chanteclair, Paris. Outubro 1911">
-                                    <img src="images/14.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/p17.png" alt=""  width="100%" height="auto" /></a>
 
                             </div>
 
@@ -1912,7 +1319,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/15.jpg" data-fancybox-group="gallery" title="Praga do povo. S.l; s.d.">
-                                    <img src="images/15.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/p19.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -2005,7 +1412,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/18.jpg" data-fancybox-group="gallery" title="Papa-mosquitos. Tagarela, 16 de julho de 1903">
-                                    <img src="images/18.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/p22.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -2033,7 +1440,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-43%; top:-58%; width:180%; height:700%;">
 
                                 <a class="lightbox" href="images/19.jpg" data-fancybox-group="gallery" title="A grande nota. Eu vou a cuba. S.l.; s.d.">
-                                    <img src="images/19.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/p23.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -2064,7 +1471,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/20.jpg" data-fancybox-group="gallery" title="Mata-mosquitos. Representante do c&oacute;digo de torturas. Tagarela, 1904">
-                                    <img src="images/20.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/p24.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -2094,7 +1501,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-152%; top:-58%; width:410%; height:700%;  margin:0; padding:1px 1px;  " >
 
                                 <a class="lightbox" href="images/21.jpg" data-fancybox-group="gallery" title="De gloria em gloria. Jornal do Brasil, setembro 1907">
-                                    <img src="images/21.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/p25.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -2364,7 +1771,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/30.jpg" data-fancybox-group="gallery" title="Ao her&oacute;i dos mosquitos. Revista da Semana. 1904">
-                                    <img src="images/30.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/p34.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -2513,7 +1920,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-148%; top:-30%; width:400%; height:500%;  margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/35.jpg" data-fancybox-group="gallery" title="A vacineida. Trag&eacute;dia l&iacute;rica fantasmag&oacute;rica. Cena pen&uacute;ltima. Correio da Manh&atilde;[?], 14 agosto 1904">
-                                    <img src="images/35.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/p39.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -2604,7 +2011,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-125%; top:-45%; width:350%; height:600%;">
 
                                 <a class="lightbox" href="images/38.jpg" data-fancybox-group="gallery" title="A var&iacute;ola. Fia-te na virgem e n&atilde;o corras. Sl.;s.d.">
-                                    <img src="images/38.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/p42.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -2634,7 +2041,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-150%; top:-30%; width:405%; height:500%;">
 
                                 <a class="lightbox" href="images/39.jpg" data-fancybox-group="gallery" title="Um calhambeque malsinado. O Malho, 24 setembro 1904">
-                                    <img src="images/39.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/p43.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -2665,7 +2072,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-117%; top:-58%; width:330%; height:700%;  margin:0; padding:1px 1px; " >
 
                                 <a class="lightbox" href="images/40.jpg" data-fancybox-group="gallery" title="Os c&eacute;lebres c&eacute;rebros. S.l.; s.d">
-                                    <img src="images/40.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/p44.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -3060,7 +2467,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-125%; top:-45%; width:350%; height:600%;">
 
                                 <a class="lightbox" href="images/53.jpg" data-fancybox-group="gallery" title="O grande m&aacute;gico das coincid&ecirc;ncias. Em Florian&oacute;polis. O Malho, 27 janeiro 1906">
-                                    <img src="images/53.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/p57.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
@@ -3118,7 +2525,7 @@ and open the template in the editor.
                             <div style="position:relative; left:-146%; top:-30%; width:400%; height:500%;">
 
                                 <a class="lightbox" href="images/56.jpg" data-fancybox-group="gallery" title="No Par&aacute;. O Malho, 25 outubro 1911">
-                                    <img src="images/56.jpg" alt=""  width="100%" height="auto" /></a>
+                                    <img src="images/p59.png" alt=""  width="100%" height="auto" /></a>
 
 
                             </div>
