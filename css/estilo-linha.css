@@ -4,10 +4,26 @@ body {
 	background: url('../images/background.jpg');
 
 }
+/*
+#flipbook {
+    background-color: transparent;
+}
+
+.mobile {
+	 background-color: transparent;
+}
+*/
+
+#flipbook .page {
+   background: url('../images/interna_11_port.jpg');
+   background-size:100% 100%;
+    /* Other CSS Rules */  
+}
 
 .book  div {
 	margin:0;
 	padding:0;
+	 background-color: transparent;
 }
 
 
@@ -224,7 +240,7 @@ z-index: 555;
 
 .figure01 {
 	position: relative;
-	top:13%;
+	top:8%;
 	left:10%;
 	width:30%;
 	height:27%;
@@ -253,11 +269,11 @@ z-index: 555;
 	position: relative;
 	top:13%;
 	left:10%;
-	background-image:url('../images/febre.png');
+	background-image:url('../images/indice_febre_menu.png');
 	background-size: 100% 100%;
 
-	width:30%;
-	height:7%;
+	width:43.87%;
+	height:10.22%;
 
 }
 
@@ -265,11 +281,11 @@ z-index: 555;
 	position: relative;
 	top:13%;
 	left:10%;
-	background-image:url('../images/febre_over.png');
+	background-image:url('../images/indice_febre_menu_over.png');
 	background-size: 100% 100%;
 
-	width:30%;
-	height:7%;
+	width:43.87%;
+	height:10.22%;
 
 
 }
@@ -277,7 +293,7 @@ z-index: 555;
 
 .figure02 {
 	position: relative;
-	top:-21%;
+	top:-30%;
 	left:60%;
 	width:30%;
 	height:27%;
@@ -299,33 +315,33 @@ z-index: 555;
 
 .figure03-text {
 	position: relative;
-	top:-52%;
+	top:-62%;
 	left:60%;
-	background-image:url('../images/peste.png');
+	background-image:url('../images/indice_peste_menu.png');
 	background-size: 100% 100%;
-	width:30%;
-	height:5%;
+	width:43.87%;
+	height:10.22%;
 
 }
 
 .figure03-text:hover {
-	background-image:url('../images/peste_over.png');
+	background-image:url('../images/indice_peste__menu_over.png');
 }
 
 .figure02-text {
 	position: relative;
-	top:16%;
-	left:13%;
-	background-image:url('../images/variola.png');
+	top:18%;
+	left:11%;
+	background-image:url('../images/indice_variola_menu.png');
 	background-size: 100% 100%;
 
-	width:20%;
-	height:4%;
+	width:43.87%;
+	height:10.22%;
 
 }
 
 .figure02-text:hover {
-	background-image:url('../images/variola_over.png');
+	background-image:url('../images/indice_variola_menu_over.png');
 
 }
 
@@ -333,7 +349,7 @@ z-index: 555;
 
 .figure03 {
 	position: relative;
-	top:-17%;
+	top:-23%;
 	left:60%;
 	width:30%;
 	height:27%;
@@ -350,7 +366,7 @@ z-index: 555;
 
 .figure04 {
 	position: relative;
-	top:-50%;
+	top:-60%;
 	left:10%;
 	width:30%;
 	height:27%;
@@ -370,19 +386,19 @@ z-index: 555;
 
 .figure04-text {
 	position: relative;
-	top:-49%;
-	left:60%;
-	background-image:url('../images/viagens.png');
+	top:-59%;
+	left:56%;
+	background-image:url('../images/indice_viagens_menu.png');
 	background-size: 100% 100%;
 
-	width:31%;
-	height:5%;
+	width:43.87%;
+	height:10.22%;
 
 }
 
 
 .figure04-text:hover {
-	background-image:url('../images/viagens_over.png');
+	background-image:url('../images/indice_viagens_menu_over.png');
 }
 
 
@@ -414,6 +430,8 @@ header .marca-bvoc
 			width:100%;
 
 		}
+		
+		
 		
 	
 	}
